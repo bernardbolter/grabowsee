@@ -36,7 +36,7 @@ export default {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 2000;
+        z-index: 500;
         width: 220px;
 
         img {

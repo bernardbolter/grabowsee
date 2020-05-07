@@ -1,5 +1,5 @@
 <template>
-    <section class="time">
+    <section class="time" :style="color">
         <div class="time_block">
             <p class="time_digits">{{ days | two_digits }}</p>
             <p class="time_text">Days</p>
@@ -33,7 +33,10 @@ export default {
     data() {
         return {
             now: new Date(),
-            date: Math.trunc(new Date(2020, 7, 15, 18) / 1000)
+            date: Math.trunc(new Date(2020, 7, 15, 18) / 1000),
+            color: {
+                "color" : this.$store.getters.makeOpaque(false, 9)
+            }
         }
     },
     computed: {
@@ -78,7 +81,7 @@ export default {
     left: 0;
     position: absolute;
     bottom: 135px;
-    z-index: 101;
+    z-index: 100;
 }
 .time_block {
     display: flex;

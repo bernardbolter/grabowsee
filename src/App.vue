@@ -1,9 +1,10 @@
 <template>
-  <div id="app" class="app" :style="{'color': light}">
+  <div id="app" class="app" :style="{'color': dark}">
     <Nav />
     <Background />
     <Countdown />
-    <Art />
+    <PastProjects />
+    <Opencall />
     <About />
     <Wave 
       v-for="wave in waves" 
@@ -24,8 +25,9 @@ import Countdown from './components/Countdown.vue';
 import Wave from './components/Wave.vue';
 
 import Nav from "./components/Nav.vue";
-import Art from "./components/Art.vue";
 import About from './components/About.vue';
+import Opencall from './components/Opencall.vue';
+import PastProjects from "./components/PastProjects.vue";
 import Contact from "./components/Contact.vue";
 import Map from "./components/Map.vue";
 
@@ -33,7 +35,7 @@ export default {
   name: 'App',
   data() {
     return {
-      light: this.$store.state.lightColor,
+      dark: this.$store.state.darkColor,
       waves: [
         {
           id: 1,
@@ -60,7 +62,8 @@ export default {
     Background,
     Countdown,
     Wave,
-    Art,
+    PastProjects,
+    Opencall,
     About,
     Contact,
     Nav,
@@ -78,9 +81,18 @@ export default {
 @import url(https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 #app {
-  margin: 0;
-  padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
+
+// z-index table
+// 0 - background picture
+// 100 - home content + countdown
+// 200 - about
+// 300 - contact
+// 400 - waves
+// 500 - navigation
+// 600 - past projects
+// 700 - close
+
 </style>

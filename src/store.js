@@ -7,10 +7,11 @@ const store = new Vuex.Store({
   state: {
     darkColor: "rgba(0,0,0,0.9)",
     lightColor: "rgba(255,255,255,0.9)",
+    lastPage: '',
     links: [
-        { name: "art", id: 1, active: false },
-        { name: "opencall", id: 2, active: false },
-        { name: "about", id: 3, active: false },
+        { name: "about", id: 1, active: false },
+        { name: "open call", id: 2, active: false },
+        { name: "past projects", id: 3, active: false },
         { name: "contact", id: 4, active: false }
     ]
   },
@@ -24,6 +25,10 @@ const store = new Vuex.Store({
         state.links.map((link, i) => {
             if (link.name === name) {
                 state.links[i].active = true;
+                if (name !== "past projects") {
+                    state.lastPage = name;
+                }
+                console.log(state.lastPage);
             } else {
                 state.links[i].active = false;
             }

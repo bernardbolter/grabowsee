@@ -27,8 +27,6 @@ export default {
     },
     mounted() {
         this.pad = Math.floor(Math.random() * (15 - 8 + 1) + 8);
-        console.log(this.$store.state.lightColor);
-        console.log(this.$store.getters.makeOpaque(false, 4));
     },
     computed: {
         itemStyle() {

@@ -31,14 +31,15 @@ export default {
     .contact {
         position: absolute;
         top: 500px;
-        left: -335px;
-        z-index: 500;
+        left: 100%;
+        z-index: 301;
         display: flex;
         flex-direction: column;
         align-content: left;
         justify-content: center;
         transition: left 1s ease-in-out;
         padding: 40px 30px;
+        box-sizing: border-box;
     }
 
     h1 {
@@ -63,7 +64,7 @@ export default {
     }
 
     .contactOn {
-        left: -4px;
+        left: -335px;
         transition: left 1s ease-in-out;
     }
 </style>
