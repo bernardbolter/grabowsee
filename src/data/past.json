@@ -1,0 +1,116 @@
+{
+    "cg2019" : [
+            {
+            "id" : 1,
+            "name" : "Dietrich Meyer",
+            "image" : "dietrich2019",
+            "landscape": false
+        }, 
+        {
+            "id" : 2,
+            "name" : "Christine Cheung",
+            "image" : "christine2019",
+            "landscape": true
+        },
+        {
+            "id" : 3,
+            "name" : "Alanna Lynch",
+            "image" : "alanna2019",
+            "landscape" : true
+        },
+        {
+            "id" : 4,
+            "name" : "Brogan Geurts",
+            "image" : "brogan2019",
+            "landscape" : true
+        },
+        {
+            "id" : 5,
+            "name" : "Bernard Bolter",
+            "image" : "bernard2019",
+            "landscape" : false
+        },
+        {
+            "id" : 6,
+            "name" : "Jack Dove",
+            "image" : "jack2019",
+            "landscape" : false
+        },
+        {
+            "id" : 7,
+            "name" : "Lapo Simeoni",
+            "image" : "lapo2019",
+            "landscape" : true
+        },
+        {
+            "id" : 8,
+            "name" : "Laure Boer",
+            "image" : "laure2019",
+            "landscape" : true
+        },
+        {
+            "id" : 9,
+            "name" : "Robert & Frank",
+            "image" : "robert2019",
+            "landscape" : false
+        },
+        {
+            "id" : 10,
+            "name" : "Sandra Julve",
+            "image" : "sandra2019",
+            "landscape" : true
+        }
+    ],
+    "cg2018": [
+        {
+            "id" : 1,
+            "image" : "01",
+            "landscape" : true
+        }, 
+        {
+            "id" : 2,
+            "image" : "02",
+            "landscape" : true
+        }, 
+        {
+            "id" : 3,
+            "image" : "03",
+            "landscape" : true
+        }, 
+        {
+            "id" : 4,
+            "image" : "04",
+            "landscape" : true
+        }, 
+        {
+            "id" : 5,
+            "image" : "05",
+            "landscape" : true
+        }, 
+        {
+            "id" : 6,
+            "image" : "06",
+            "landscape" : true
+        }, 
+        {
+            "id" : 7,
+            "image" : "07",
+            "landscape" : true
+        }, 
+        {
+            "id" : 8,
+            "image" : "08",
+            "landscape" : true
+        }, 
+        {
+            "id" : 9,
+            "image" : "09",
+            "landscape" : true
+        }, 
+        {
+            "id" : 10,
+            "image" : "10",
+            "landscape" : true
+        }  
+    ]
+}

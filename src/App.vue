@@ -1,7 +1,8 @@
 <template>
-  <div id="app" class="app" :style="{'color': dark}">
+  <div id="app" class="app" :style="globalTextColor">
     <Nav />
     <Background />
+    <Home />
     <Countdown />
     <PastProjects />
     <Opencall />
@@ -21,6 +22,7 @@
 
 <script>
 import Background from './components/Background.vue';
+import Home from './components/Home.vue';
 import Countdown from './components/Countdown.vue';
 import Wave from './components/Wave.vue';
 
@@ -60,6 +62,7 @@ export default {
   },
   components: {
     Background,
+    Home,
     Countdown,
     Wave,
     PastProjects,
@@ -70,19 +73,38 @@ export default {
     Map
   },
   created() {
-    this.$store.commit('decideColors');
-    this.light = this.$store.state.lightColor;
-    this.dark = this.$store.state.darkColor;
+    this.$store.state.lightColor = this.createColor(245,255);
+    this.$store.state.darkColor = this.createColor(20,40);
+  },
+  computed: {
+    globalTextColor() {
+      return {
+        color: this.$store.state.darkColor
+      }
+    }
+  },
+  methods: {
+    createColor(min, max) {
+      let color = '';
+      for ( let i = 0; i < 3; i++ ) {
+        color += Math.floor(Math.random() * (max - min + 1) + min) + ',';
+      }
+      return `rgba(${color}0.9)`;
+    }
   }
 }
 </script>
 
 <style lang="scss">
 @import url(https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-
+@import url(https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap);
 #app {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // z-index table

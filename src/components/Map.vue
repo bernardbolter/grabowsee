@@ -1,7 +1,7 @@
 <template>
     <div 
         class="map" 
-        :class="{ mapOn: this.$store.state.links[3].active }"
+        :class="{ mapOn: this.$store.state.activeLink ===4 }"
         :style="border"
     >
         <mapbox-map
@@ -40,7 +40,7 @@ export default {
     data() {
         return {
             border: {
-                "border-left" : `1px solid ${this.$store.getters.makeOpaque(false, 9)}`
+                "border-right" : `2px solid ${this.$store.getters.makeOpaque(false, 9)}`
             }
         }
     }
@@ -54,11 +54,17 @@ export default {
         width: 75%;
         height: 100vh;
         position: fixed;
-        right: calc(-75% - 4px);
+        left: -75%;
         top: 0;
         z-index: 500;
-        transition: right 1s ease-in-out;
-        overflow: hidden;
+        transition: left 1s ease-in-out;
+        box-sizing: border-box;
+        z-index: 300;
+    }
+
+    .mapOn {
+        left: 0;
+        transition: left 1s ease-in-out;
     }
 
    .mapboxgl-map {
@@ -66,11 +72,6 @@ export default {
         width: 100%;
         height: 100%;
       }
-
-    .mapOn {
-        right: 0;
-        transition: right 1s ease-in-out;
-    }
 
     .map-link {
         font-size: 16px;

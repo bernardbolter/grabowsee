@@ -14,7 +14,7 @@
 <script>
 export default {
     name: "Item",
-    props: ['name'],
+    props: ['name', 'navId'],
     data() {
         return {
             pad: 0,
@@ -37,7 +37,7 @@ export default {
     },
      methods: {
         goNav() {
-            this.$store.commit('decideNav', this.name);
+            this.$store.commit('decideNav', this.navId);
         }
     }
 }

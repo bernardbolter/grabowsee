@@ -1,39 +1,54 @@
 <template>
-    <div class="pastprojects" :class="{ pastProjectsOn: this.$store.state.links[2].active }">
+    <div class="pastprojects" :class="{ pastProjectsOn: this.$store.state.activeLink === 3 }">
         <section class="projects" :style="backcolor">
-            <h1>Past Projects</h1>
+            <h1 :style="heading">Past Projects</h1>
             <div class="project">
-                <div class="left">
+                <div>
                     <h2>Ritual</h2>
                     <h3>10. - 18.August 2019</h3>
                     <h4>“Ritual, whether secular or sacred binds groups together, ensuring their harmonious functioning by generating and maintaining orders of meaning, purpose and value”</h4>
                     <h5>(Barry Stephenson)</h5>
-                    <h6>Curated by Sonja Teszler & Yan Gi Cheng. Organised by Philip Schrader & Alice Morey.</h6>
+                    <h6>Curated by Sonja Teszler & Yan Gi Cheng.</h6>
+                    <h6>Organised by Philip Schrader & Alice Morey.</h6>
                 </div>
-                <div class="right">
-                    <h4>Participants:</h4>
-                    <h5>Sounds & Performance</h5>
+                <div>
+                    <h3>Participants:</h3>
+                    <h4>Sounds & Performance</h4>
                     <p>Pina Ruecker, Andy Aquarius, Luysali Theisen, Florentin Scheicher, Lukas Klein, Michal Krajczok, Joanna Harvey, Nils Bloch, Oliver Holyoake, Maja Kala, Liza Casullo, Rachel Margetts, Fanny Sorgo, Fellipe Vergani & Eva Geckeler, Karolina Svärd, Tabea Briggs, Laure Boer, Jack Dove</p>
-                    <h5>Art & Installation</h5>
+                    <h4>Art & Installation</h4>
                     <p>Dietrich Meyer, Jérôme Pretot, YADA YADA, Carrick Bell, Keturah Cummings, Tara Dominguez, Brogan Geurts, Rocco Ruglio-Misurell, Mars Mandél, Alana Lynch, Yuko Ishida, Lale Willan, Sascha Walmroth, Pippa Brabyn, Toby Saunders, Robert & Frank, Magdalena Zagorski, Rob Blake, Yui Shimizu, Maitane Midby, Alex Porter, Tine Nedbo, Lina Schobel, Zwek, Lucia Krug, Max Fowler, Therese Resi, Mario Campos, Liina Nilson, Leander Leutzendorff, Nina Jørgensen, Volker Tolle, Katharina Bonk, Mano Krach, Konstantin Schreiber, Veronica Gudmundson, Aurora Del Rio, Gregorio Acevedo, Leonardo Rossi, Tanya Barnau Sythoff, Alvin McIntyre, Tanya Barnau Sythoff, Alexandra Vasilieva, Max Lunn, Chrischa Oswald,  Yannik Dörnte, Agrina Vllasaliu, Werner Kernebeck, David Braithwaite, Christine Cheung, Sean Coughlin, Mikołaj Rogowski, Hannah Turner-Duffin, Aurelia Van Kempen, Matthew Coleman, Sandra Julve, Anke Westermann, Sheng Jiang, Lapo Simeoni, Louisa Elderton, Sara Ezzell, Rosie Dahlstrom</p>
                 </div>
             </div>
+            <div class="artworks">
+                <Artwork 
+                    v-for="art in this.shuffledArt2019"
+                    :key="art.id"
+                    v-bind="art"
+                />
+            </div>
             <div class="project">
-                <div class="left">
+                <div>
                     <h2>Symbiosis</h2>
                     <h3>10.-19. August 2018</h3>
                     <h4>‘Symbiosis’ is any type of a close and long-term biological interaction between two different biological organisms. Each symbiont may be of the same or of different species. In Fostering such unexpected unions, symbiosis becomes the ultimate survival of the unfitted that defy all rules and predictions by means of collaborative creativity.</h4>
                     <h6>Curated by Yan Gi Cheng. Organised by Philip Schrader & Alice Morey.</h6>
                 </div>
-                <div class="right">
-                    <h4>Participants:</h4>
+                <div>
+                    <h3>Participants:</h3>
                     <p>Sasha Walmroth, Christian Buchner, Carlos Froelich, Andy Aged, Alice Morey, Zwek, Yan Gi Cheng, Bernard Bolter, Fellipe Vergani, Mirela Alister, Sandre Julve, Mai Linh Bui, Maithu Bui, Thea Ludcock, Tina Nedo, Liina Nilsson, Maitane Midby, Rocco Ruglio-Misurelll, Rob Blake, Christine Cheung, Laure Boer, Bernard Bolter, Majse Vilstrup, Karolina Svärd, Keturah Cummings, Tania Gomes, Nina Jørgensen, Philipp Halfmann, Yotaro Niwa, Evil Twin, Aurore del Rio, Yannik Doernte, Sebastian Völkers, Nancy Hillen, Valerie Vaernewyck, Louisa Elderton, David Braithwaite, Werner Kernebeck, Isabel Cavenecia, Sarah Grether, Lady Gaby, Camila McHugh, Christine Schwarz, KAVALL, AYRIE, Daniel Kupferberg,Toby Saunders, Ingwa, UMLAUT</p>
                 </div>
             </div>
+            <div class="artworks">
+                <Artwork 
+                    v-for="art in this.shuffledArt2018"
+                    :key="art.id"
+                    v-bind="art"
+                />
+            </div>
         </section>
         <div class="back two" :style="backcolor" />
-        <div class="close" :style="closeBack" @click="close" :class="{ closeProjectsOn: this.$store.state.links[2].active }">
-            <svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <div class="close" :style="closeBack" @click="close" :class="{ closeProjectsOn: this.$store.state.activeLink === 3 }">
+            <svg viewBox="0 0 65 65">
                 <g id="close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <circle :style="fill" cx="32.5" cy="32.5" r="32.5"></circle>
                     <line :style="stroke" x1="19.5" y1="19.5" x2="45.5" y2="45.5" stroke-width="4" stroke-linecap="round"></line>
@@ -45,8 +60,14 @@
 </template>
 
 <script>
+import past from "../data/past.json";
+import Artwork from "./Artwork.vue";
+
 export default {
     name: "PastProjects",
+    components: {
+        Artwork
+    },
     data() {
         return {
             backcolor: {
@@ -60,12 +81,34 @@ export default {
             },
             fill: {
                 "fill" : this.$store.getters.makeOpaque(true, 9)
-            }
+            },
+            heading: {
+                "background-color" : this.$store.getters.makeOpaque(false, 6),
+                color : this.$store.getters.makeOpaque(true, 8)
+            },
+            past,
+            shuffledArt2019: [],
+            shuffledArt2018: []
         }
+    },
+    mounted() {
+        this.shuffledArt2019 = this.shuffle(this.past.cg2019);
+        this.shuffledArt2018 = this.shuffle(this.past.cg2018);
     },
     methods: {
         close() {
             this.$store.commit('decideNav', this.$store.state.lastPage);
+        },
+        shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array
         }
     }
 }
@@ -80,7 +123,6 @@ export default {
         left: 0;
         margin: 0;
         padding: 0;
-        
     }
     .back {
         width: 100%;
@@ -95,18 +137,94 @@ export default {
         width: 100%;
         height: 100vh;
         margin: 0;
-        padding: 0 0 0 100px;
+        padding: 0 0 300px 75px;
         z-index: 601;
         position: fixed;
         overflow-y: scroll;
-        top: -100%;
+        top: 100%;
         transition: top 1s ease-in-out;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        display: block;
 
         h1 {
+            width: 97%;
+            height: 65px;
+            margin: 0;
+            padding: 0 0 10px 3%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            font-family: $monofont;
+            font-size: 30px
+        }
+
+        .artworks {
             width: 100%;
-            height: 100px;
-            background: white;
-            color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .project {
+            width: 100%;
+            background: rgba(255,255,255,0.9);
+            display: flex;
+            align-items: center;
+            padding: 40px 0;
+
+            div {
+                width: 50%;
+                display: inline-block;
+            }
+
+            h2 {
+                font-family: $monofont;
+                padding: 0 0 0 10%;
+                opacity: 0.7;
+                font-size: 40px;
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 11px;
+                padding: 0 0 0 20px;
+            }
+            h4 {
+                width: 80%;
+                padding: 0 10%;
+                font-weight: 300;
+                font-size: 20px;
+                opacity: 0.7
+
+            }
+            h5 {
+                font-weight: 400;
+                font-size: 14px;
+                text-align: right;
+                padding: 0 30% 0 0;
+                opacity: 0.5;
+            }
+            h6 {
+                font-weight: 600;
+                font-size: 14px;
+                width: 90%;
+                padding: 0 5%;
+                margin: 5px;
+            }
+            p {
+                width: 90%;
+                padding: 0 5%;
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 1.5;
+                letter-spacing: 0.05em;
+            }
         }
     }
     .pastProjectsOn .projects {
@@ -115,10 +233,10 @@ export default {
     }
     .close {
         position: absolute;
-        top: -100px;
-        left: -100px;
-        width: 100px;
-        height: 100px;
+        top: -75px;
+        left: -75px;
+        width: 75px;
+        height: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -126,6 +244,10 @@ export default {
         transition: all 0.5s ease-in-out;
         opacity: 0.7;
         cursor: pointer;
+
+        svg {
+            width: 70%;
+        }
 
         &:hover {
             opacity: 1;

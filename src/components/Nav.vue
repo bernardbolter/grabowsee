@@ -9,7 +9,8 @@
             <Item
                 v-for="link in this.$store.state.links"
                 :key="link.id"
-                :name="link.name" 
+                :name="link.name"
+                :navId="link.id" 
             />
         </ul>
     </div>
@@ -25,7 +26,7 @@ export default {
     },
     methods: {
         goHome() {
-            this.$store.commit('resetNav');
+            this.$store.commit('decideNav', 0);
         }
     }
 }
@@ -37,11 +38,15 @@ export default {
         top: 0;
         left: 0;
         z-index: 500;
-        width: 220px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
 
         img {
             width: 170px;
-            margin: 20px 0 0 20px;
+            margin: 50px 0 0;
             cursor: pointer;
         }
 

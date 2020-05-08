@@ -68,7 +68,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import url(https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 .time {
@@ -80,7 +80,7 @@ export default {
     padding: 0;
     left: 0;
     position: absolute;
-    bottom: 135px;
+    bottom: 150px;
     z-index: 100;
 }
 .time_block {
@@ -93,24 +93,24 @@ export default {
 .time_digits {
     font-size: 140px;
     font-weight: 400;
-    font-family: 'Major Mono Display', monospace;
-    margin: 10px;
+    font-family: $monofont;
+    margin: 0;
     text-align: center;
 }
 .time_text {
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin: 10px 0 10px 70px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    margin-top: -30px;
 }
 .time_between {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 4%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $monofont;
     font-weight: 300;
     font-size: 99px;
 }

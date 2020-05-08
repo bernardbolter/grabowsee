@@ -1,7 +1,7 @@
 <template>
     <div 
         class="contact" 
-        :class="{ contactOn: this.$store.state.links[3].active }"
+        :class="{ contactOn: this.$store.state.activeLink === 4 }"
         :style="background"
     >
         <h1 :style="line"><span>Philip Schrader</span> or <span>Alice Morey</span></h1>
@@ -17,7 +17,10 @@ export default {
             hover: false,
             background: {
                 "background-color" : this.$store.getters.makeOpaque(true, 6),
-                "border" : `2px solid ${this.$store.getters.makeOpaque(false, 7)}`
+                "border-left" : `2px solid ${this.$store.getters.makeOpaque(false, 7)}`,
+                "border-top" : `2px solid ${this.$store.getters.makeOpaque(false, 7)}`,
+                "border-bottom" : `2px solid ${this.$store.getters.makeOpaque(false, 7)}`,
+                "color" : this.$store.getters.makeOpaque(false, 8)
             },
             line: {
                 "border-bottom" : `2px solid ${this.$store.getters.makeOpaque(false, 7)}`
@@ -29,8 +32,9 @@ export default {
 
 <style scoped style="scss">
     .contact {
-        position: absolute;
-        top: 500px;
+        position: fixed;
+        top: 300px;
+        width: 23%;
         left: 100%;
         z-index: 301;
         display: flex;
@@ -42,13 +46,17 @@ export default {
         box-sizing: border-box;
     }
 
+    .contactOn {
+        left: 77%;
+        transition: left 1s ease-in-out;
+    }
+
     h1 {
         margin: 5px 0 0 20px;
         padding: 0 0 20px 0;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 16px;
-        border-bottom: 1px solid white;
     }
 
     span {
@@ -61,10 +69,5 @@ export default {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 15px;
-    }
-
-    .contactOn {
-        left: -335px;
-        transition: left 1s ease-in-out;
     }
 </style>
