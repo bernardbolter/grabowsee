@@ -95,12 +95,12 @@ export default {
         box-sizing: border-box;
     }
     .about {
-        width: 50%;
+        width: 60%;
         margin: 0;
         padding: 0;
         height: 100vh;
         top: -100%;
-        left: 25%;
+        left: 15%;
         position: absolute;
         transition: top 1s ease-in-out;
         background: #000;
@@ -109,23 +109,51 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media (min-width: 1100px) {
+            width: 50%;
+            left: 25%;
+        }
+
         h3 {
-            width: 80%;
-            font-size: 22px;
-            margin: 0 10%;
+            width: 90%;
+            font-size: 18px;
+            margin: 0 5%;
             padding: 0;
             line-height: 1.6;
             font-weight: 600;
             font-family: $monofont;
+            @media (min-width: 1000px) {
+                font-size: 18px;
+                width: 80%;
+                margin: 0 10%;
+            }
+            @media (min-width: 1100px) {
+                font-size: 20px;
+            }
+            @media (min-width: 1500px) {
+                font-size: 22px;
+            }
         }
+
         p {
-            width: 80%;
-            margin: 15px 10%;
+            width: 90%;
+            margin: 15px 5%;
             padding: 0;
             font-weight: 300;
             line-height: 1.6;
-            font-size: 18px;
+            font-size: 14px;
             opacity: 0.9;
+            @media (min-width: 1000px) {
+                font-size: 14px;
+                width: 80%;
+                margin: 0 10%;
+            }
+            @media (min-width: 1100px) {
+                font-size: 16px;
+            }
+            @media (min-width: 1500px) {
+                font-size: 18px;
+            }
         }
     }
     .aboutOn {
@@ -133,18 +161,32 @@ export default {
         transition: top 1s ease-in-out;
     }
     .instagram {
-        width: 400px;
-        height: 400px;
+        width: 250px;
+        height: 250px;
         top: 100px;
         left: 100%;
         position: absolute;
         transition: left 1s ease-in-out;
         z-index: 201;
         box-sizing: border-box;
+        @media (min-width: 1000px) {
+            width: 300px;
+            height: 300px;
+        }
+        @media (min-width: 1400px) {
+            width: 350px;
+            height: 350px;
+        }
+        @media (min-width: 1400px) {
+            width: 400px;
+            height: 400px;
+        }
+
         img {
             width: 100%;
             box-sizing: border-box;
         }
+
         a {
             position: relative;
             display: flex;
@@ -153,18 +195,28 @@ export default {
             align-items: center;
             position: absolute;
             right: 0;
-            top: 400px;
+            top: 250px;
             text-decoration: none;
             font-family: $monofont;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 16px;
             padding: 0 0 0 15px;
             opacity: 0.6;
             transition: opacity 0.5s ease-in-out;
             &:hover {
                 opacity: 0.9;
                 transition: opacity 0.5s ease-in-out;
-            } 
+            }
+            @media (min-width: 1000px) {
+                font-size: 18px;
+                top: 300px;
+            }
+            @media (min-width: 1200px) {
+                top: 350px;
+            }
+            @media (min-width: 1400px) {
+                top: 400px;
+            }
             .svg-container {
                 width: 30px;
                 margin: 10px;
@@ -172,8 +224,11 @@ export default {
         }
     }
     .instagramOn {
-        left: 67%;
+        left: calc(100% - 270px);
         transition: left 1s ease-in-out;
+        @media (min-width: 1000px) {
+            left: 67%;
+        }
     }
 
 </style>

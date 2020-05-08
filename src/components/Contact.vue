@@ -30,11 +30,11 @@ export default {
 }
 </script>
 
-<style scoped style="scss">
+<style scoped lang="scss">
     .contact {
         position: fixed;
-        top: 300px;
-        width: 23%;
+        width: 50%;
+        top: 75px;
         left: 100%;
         z-index: 301;
         display: flex;
@@ -44,11 +44,25 @@ export default {
         transition: left 1s ease-in-out;
         padding: 40px 30px;
         box-sizing: border-box;
+        @media (min-width: 1000px) {
+            top: 150px;
+            width: 35%;
+        }
+        @media (min-width: 1200px) {
+            top: 300px;
+            width: 23%;
+        }
     }
 
     .contactOn {
-        left: 77%;
+        left: 50%;
         transition: left 1s ease-in-out;
+        @media (min-width: 1000px) {
+            left: 65%;
+        }
+        @media (min-width: 1200px) {
+            left: 77%;
+        }
     }
 
     h1 {

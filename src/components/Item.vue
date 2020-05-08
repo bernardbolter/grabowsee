@@ -45,7 +45,6 @@ export default {
 
 <style lang="scss">
     .item {
-        font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         position: relative;
         text-align: center;
@@ -54,6 +53,10 @@ export default {
         display: block;
         cursor: pointer;
         opacity: 1;
+        font-size: 15px;
+        @media (min-width: 1100px) {
+            font-size: 18px;
+        }
 
         span {
             transition: background-color 0.5s ease-in;

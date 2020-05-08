@@ -176,11 +176,20 @@ export default {
             background: rgba(255,255,255,0.9);
             display: flex;
             align-items: center;
+            flex-direction: column;
             padding: 40px 0;
+            @media (min-width: 1000px) {
+                flex-direction: row;
+            }
 
             div {
-                width: 50%;
+                width: 84%;
+                margin: 0 8%;
                 display: inline-block;
+                @media (min-width: 1000px) {
+                    width: 40%;
+                    margin: 0 5%;
+                }
             }
 
             h2 {

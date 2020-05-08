@@ -51,15 +51,19 @@ export default {
     @import url("https://api.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css");
     .map {
         display: block;
-        width: 75%;
+        width: 100%;
         height: 100vh;
         position: fixed;
-        left: -75%;
+        left: -100%;
         top: 0;
         z-index: 500;
         transition: left 1s ease-in-out;
         box-sizing: border-box;
         z-index: 300;
+        @media (min-width: 1000px) {
+            width: 75%;
+            left: -75%;
+        }
     }
 
     .mapOn {

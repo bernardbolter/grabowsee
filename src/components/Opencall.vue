@@ -107,7 +107,7 @@ export default {
 
 <style scoped lang="scss">
     .opencall {
-        width: 75%;
+        width: 85%;
         height: 100vh;
         position: fixed;
         overflow-y: scroll;
@@ -116,30 +116,55 @@ export default {
         margin: 0;
         padding: 0;
         transition: left 0.5s ease-in-out;
-        z-index: 800;
+        z-index: 350;
         font-size: 10px;
         box-sizing: border-box;
+        @media (min-width: 1100px) {
+            width: 75%;
+        }
         
     }
     .openOn {
-        left: 25%;
+        left: 15%;
         transition: left 1s ease-in-out;
+        @media (min-width: 1100px) {
+            left: 25%;
+        }
     }
     .info {
-        width: 60%;
-        margin: 100px 20% 0 20%;
+        width: 80%;
+        margin: 100px 10% 0 10%;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-end;
+        @media (min-width: 1200px) {
+            width: 60%;
+            margin: 100px 20% 0 20%;
+        }
 
         h4 {
-            font-size: 30px;
+            font-size: 24px;
             font-weight: 700;
+            @media (min-width: 1400px) {
+                font-size: 30px
+            }
+        }
+        h2 {
+            font-size: 12px;
+            @media (min-width: 1300px) {
+                font-size: 14px
+            }
+            @media (min-width: 1400px) {
+                font-size: 16px
+            }
         }
         p {
-            font-size: 30px;
+            font-size: 24px;
             font-weight: 200;
+            @media (min-width: 1400px) {
+                font-size: 28px
+            }
         }
     }
     .left {
@@ -156,8 +181,15 @@ export default {
         text-align: center;
 
         h5 {
-            font-size: 30px;
-            font-weight: 100
+            font-size: 18px;
+            font-weight: 200;
+            @media (min-width: 1400px) {
+                font-size: 20px;
+                font-weight: 100;
+            }
+            @media (min-width: 1400px) {
+                font-size: 28px;
+            }
         }
 
         h1 {
@@ -170,38 +202,68 @@ export default {
         margin: 50px 10% 0 10%;
 
         h2 {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             text-align: justify;
             line-height: 1.7;
+            @media (min-width: 1400px) {
+                font-size: 18px
+            }
 
             .power {
                 background-color: red;
             }
         }
         h3 {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 300;
             text-align: center;
             font-style: italic;
-            line-height: 2
+            line-height: 2;
+            @media (min-width: 1400px) {
+                font-size: 19px
+            }
         }
         p {
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 500;
             text-align: right;
+            @media (min-width: 1400px) {
+                font-size: 17px
+            }
         }
     }
     .application {
-        width: 60%;
-        margin: 50px 20%;
+        width: 86%;
+        margin: 30px 7%;
         padding: 0 0 300px;
+        @media (min-width: 1000px) {
+            width: 80%;
+            margin: 40px 10%;
+        }
+        @media (min-width: 1200px) {
+            width: 74%;
+            margin: 40px 13%;
+        }
+        @media (min-width: 1200px) {
+            width: 70%;
+            margin: 50px 15%;
+        }
+        @media (min-width: 1400px) {
+            width: 60%;
+            margin: 50px 20%;
+        }
+        @media (min-width: 1400px) {
+            width: 60%;
+            margin: 50px 20%;
+        }
 
         h1 {
             font-size: 18px;
             font-weight: 600;
             font-family: $monofont;
             opacity: 0.6;
+            margin: 50px 0 0 0;
         }
 
         h2 {
@@ -217,14 +279,18 @@ export default {
         }
 
         a {
-            padding: 30px 50px;
+            padding: 25px 40px;
             margin: 20px 10px 20px 0;
             display: inline-block;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 18px;
             font-family: $monofont;
             opacity: 0.6;
             transition: opacity 0.5s ease-in-out;
+            @media (min-width: 1300px) {
+                font-size: 20px;
+                padding: 30px 50px;
+            }
 
             &:hover {
                 opacity: 1;

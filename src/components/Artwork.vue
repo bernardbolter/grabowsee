@@ -36,12 +36,20 @@ export default {
         }
     }
     .landscape {
-        width: 46%;
-        margin: 4% 2%;
+        width: 86%;
+        margin: 4% 7%;
+        @media (min-width: 1000px) {
+            width: 46%;
+            margin: 4% 2%;
+        }
     }
     .portrait {
-        width: 33%;
-        margin: 1% 8.5%;
+        width: 66%;
+        margin: 1% 12%;
+        @media (min-width: 1000px) {
+            width: 33%;
+            margin: 1% 8.5%;
+        }
     }
     .card {
         z-index: 605;

@@ -112,6 +112,7 @@ export default {
 // 100 - home content + countdown
 // 200 - about
 // 300 - contact
+// 450 - opencall
 // 400 - waves
 // 500 - navigation
 // 600 - past projects

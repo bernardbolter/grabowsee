@@ -25,26 +25,50 @@ export default {
 <style scoped lang="scss">
     .home {
         width: 70%;
-        margin: 150px 0 0 30%;
+        margin: 250px 0 0 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         opacity: 0;
         transition: opacity 1s ease-in-out;
+        @media (min-width: 1100px) {
+            margin: 200px 0 0 30%;
+        }
+        @media (min-width: 1500px) {
+            margin: 150px 0 0 30%;
+        }
+
         h1 {
-            font-size: 200px;
+            font-size: 80px;
             font-weight: 800;
             text-align: center;
             margin: 0;
+            @media (min-width: 900px) {
+                font-size: 100px;
+            }
+            @media (min-width: 1100px) {
+                font-size: 150px;
+            }
+            @media (min-width: 1500px) {
+                font-size: 200px;
+            }
         }
         h2 {
-            font-size: 50px;
+            font-size: 22px;
             font-weight: 400;
             text-align: left;
             display: inline-block;
             padding: 5px 10px;
-            
+            @media (min-width: 900px) {
+                font-size: 25px;
+            } 
+            @media (min-width: 1100px) {
+                font-size: 35px;
+            } 
+            @media (min-width: 1500px) {
+                font-size: 50px;
+            }
         }
     }
     .homeOn {

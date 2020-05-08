@@ -91,19 +91,32 @@ export default {
     width: 21%;
 }
 .time_digits {
-    font-size: 140px;
+    font-size: 75px;
     font-weight: 400;
     font-family: $monofont;
     margin: 0;
     text-align: center;
+    @media (min-width: 900px) {
+        font-size: 100px;
+    }
+    @media (min-width: 1100px) {
+        font-size: 120px;
+    }
 }
 .time_text {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
-    margin: 10px 0 10px 70px;
+    margin: -10px 0 10px 20px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-top: -30px;
+    @media (min-width: 900px) {
+        font-size: 13px;
+        margin: -20px 0 10px 40px;
+    }
+    @media (min-width: 1100px) {
+        font-size: 16px;
+        margin: -30px 0 10px 70px;
+    }
 }
 .time_between {
     display: flex;
@@ -112,6 +125,12 @@ export default {
     width: 4%;
     font-family: $monofont;
     font-weight: 300;
-    font-size: 99px;
+    font-size: 50px;
+    @media (min-width: 900px) {
+        font-size: 69px;
+    }
+    @media (min-width: 1100px) {
+        font-size: 99px;
+    }
 }
 </style>
