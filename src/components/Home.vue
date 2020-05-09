@@ -24,27 +24,38 @@ export default {
 
 <style scoped lang="scss">
     .home {
-        width: 70%;
-        margin: 250px 0 0 30%;
+        width: 90%;
+        margin: 100px 10% 0 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: flex-end;
         opacity: 0;
         transition: opacity 1s ease-in-out;
-        @media (min-width: 1100px) {
-            margin: 200px 0 0 30%;
+        @media (min-width: 650px) {
+            margin: 250px 0 0 10%;
+            align-items: flex-start;
         }
-        @media (min-width: 1500px) {
+        @media (min-width: 769px) {
+            width: 70%;
+            margin: 250px 0 0 30%;
+        }
+        @media (min-width: 1100px) {
             margin: 150px 0 0 30%;
         }
 
         h1 {
-            font-size: 80px;
+            font-size: 55px;
             font-weight: 800;
-            text-align: center;
+            text-align: right;
             margin: 0;
-            @media (min-width: 900px) {
+            @media (min-width: 500px) {
+                font-size: 70px;
+            }
+            @media (min-width: 650px) {
+                font-size: 110px;
+            }
+            @media (min-width: 769px) {
                 font-size: 100px;
             }
             @media (min-width: 1100px) {
@@ -55,11 +66,20 @@ export default {
             }
         }
         h2 {
-            font-size: 22px;
+            font-size: 16px;
             font-weight: 400;
             text-align: left;
             display: inline-block;
             padding: 5px 10px;
+            @media (min-width: 500px) {
+                font-size: 20px;
+            }
+            @media (min-width: 650px) {
+                font-size: 28px;
+            }
+            @media (min-width: 769px) {
+                font-size: 22px;
+            }
             @media (min-width: 900px) {
                 font-size: 25px;
             } 

@@ -107,7 +107,7 @@ export default {
 
 <style scoped lang="scss">
     .opencall {
-        width: 85%;
+        width: 100%;
         height: 100vh;
         position: fixed;
         overflow-y: scroll;
@@ -117,41 +117,60 @@ export default {
         padding: 0;
         transition: left 0.5s ease-in-out;
         z-index: 350;
-        font-size: 10px;
         box-sizing: border-box;
+        @media (min-width: 768px) {
+            width: 85%;
+        }
         @media (min-width: 1100px) {
             width: 75%;
         }
         
     }
     .openOn {
-        left: 15%;
+        left: 0;
         transition: left 1s ease-in-out;
+        @media (min-width: 768px) {
+            left: 15%;
+        }
         @media (min-width: 1100px) {
             left: 25%;
         }
     }
     .info {
-        width: 80%;
-        margin: 100px 10% 0 10%;
+        width: 90%;
+        margin: 110px 5% 0 5%;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-end;
+        @media (min-width: 500px) {
+            margin: 150px 5% 0 5%;
+        }
+        @media (min-width: 650px) {
+            width: 80%;
+            margin: 150px 10% 0 10%;
+        }
         @media (min-width: 1200px) {
             width: 60%;
             margin: 100px 20% 0 20%;
         }
 
         h4 {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 700;
+            text-align: left;
+            @media (min-width: 500px) {
+                font-size: 24px;
+            }
             @media (min-width: 1400px) {
                 font-size: 30px
             }
         }
         h2 {
-            font-size: 12px;
+            font-size: 11px;
+            @media (min-width: 650px) {
+                font-size: 12px;
+            }
             @media (min-width: 1300px) {
                 font-size: 14px
             }
@@ -160,8 +179,15 @@ export default {
             }
         }
         p {
-            font-size: 24px;
-            font-weight: 200;
+            font-size: 12px;
+            font-weight: 400;
+            @media (min-width: 500px) {
+                font-size: 20px;
+                font-weight: 200px;
+            }
+            @media (min-width: 650px) {
+                font-size: 24px;
+            }
             @media (min-width: 1400px) {
                 font-size: 28px
             }
@@ -178,11 +204,19 @@ export default {
     .title {
         width: 80%;
         margin: 50px 10% 0 10%;
-        text-align: center;
 
         h5 {
-            font-size: 18px;
-            font-weight: 200;
+            font-size: 15px;
+            font-weight: 400;
+            text-align: left;
+            @media (min-width: 500px) {
+                font-size: 14px;
+                text-align: center;
+            }
+            @media (min-width: 650px) {
+               font-size: 18px;
+                font-weight: 200; 
+            }
             @media (min-width: 1400px) {
                 font-size: 20px;
                 font-weight: 100;
@@ -193,19 +227,30 @@ export default {
         }
 
         h1 {
-            font-size: 60px;
+            font-size: 50px;
             font-weight: 800;
+            text-align: center;
+            @media (min-width: 500px) {
+                font-size: 60px;
+            }
         }
     }
     .inspiration {
-        width: 80%;
-        margin: 50px 10% 0 10%;
+        width: 90%;
+        margin: 40px 5% 0 5%;
+        @media (min-width: 500px) {
+            width: 80%;
+            margin: 50px 10% 0 10%;
+        }
 
         h2 {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
             text-align: justify;
             line-height: 1.7;
+            @media (min-width: 500px) {
+                font-size: 16px;
+            }
             @media (min-width: 1400px) {
                 font-size: 18px
             }
@@ -215,11 +260,15 @@ export default {
             }
         }
         h3 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             text-align: center;
             font-style: italic;
-            line-height: 2;
+            line-height: 1.5;
+            @media (min-width: 500px) {
+                font-size: 16px;
+                line-height: 2;
+            }
             @media (min-width: 1400px) {
                 font-size: 19px
             }
@@ -236,7 +285,7 @@ export default {
     .application {
         width: 86%;
         margin: 30px 7%;
-        padding: 0 0 300px;
+        padding: 0 0 75px;
         @media (min-width: 1000px) {
             width: 80%;
             margin: 40px 10%;
@@ -267,15 +316,21 @@ export default {
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
+            @media (min-width: 500px) {
+                font-size: 16px;
+            }
         }
 
         p {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             line-height: 1.7;
             opacity: 0.7;
+            @media (min-width: 500px) {
+                font-size: 16px;
+            }
         }
 
         a {
@@ -287,6 +342,7 @@ export default {
             font-family: $monofont;
             opacity: 0.6;
             transition: opacity 0.5s ease-in-out;
+            
             @media (min-width: 1300px) {
                 font-size: 20px;
                 padding: 30px 50px;

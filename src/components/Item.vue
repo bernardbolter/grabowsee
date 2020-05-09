@@ -47,13 +47,19 @@ export default {
     .item {
         font-weight: 500;
         position: relative;
-        text-align: center;
+        text-align: right;
         margin: 20px 0 0 0;
         padding: 2px 5px;
         display: block;
         cursor: pointer;
         opacity: 1;
-        font-size: 15px;
+        font-size: 12px;
+        @media (min-width: 500px) {
+            font-size: 15px;
+        }
+        @media (min-width: 768px) {
+            text-align: center;
+        }
         @media (min-width: 1100px) {
             font-size: 18px;
         }

@@ -7,6 +7,7 @@
     <PastProjects />
     <Opencall />
     <About />
+    <Instagram />
     <Wave 
       v-for="wave in waves" 
       v-bind:bottom="wave.bottom"
@@ -28,6 +29,7 @@ import Wave from './components/Wave.vue';
 
 import Nav from "./components/Nav.vue";
 import About from './components/About.vue';
+import Instagram from "./components/Instagram.vue"
 import Opencall from './components/Opencall.vue';
 import PastProjects from "./components/PastProjects.vue";
 import Contact from "./components/Contact.vue";
@@ -68,6 +70,7 @@ export default {
     PastProjects,
     Opencall,
     About,
+    Instagram,
     Contact,
     Nav,
     Map

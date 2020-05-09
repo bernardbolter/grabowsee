@@ -1,0 +1,6 @@
+<svg viewBox="0 0 75 75">
+    <circle id="Oval" fill="#000000" cx="37.5" cy="37.5" r="37.5"></circle>
+    <line x1="20.1069572" y1="37.410036" x2="54.8930428" y2="37.410036" id="Line" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
+    <line x1="20.1069572" y1="51.0245902" x2="54.8930428" y2="51.0245902" id="Line" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
+    <line x1="20.1069572" y1="23.7954818" x2="54.8930428" y2="23.7954818" id="Line" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
+</svg>

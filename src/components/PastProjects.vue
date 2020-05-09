@@ -2,7 +2,7 @@
     <div class="pastprojects" :class="{ pastProjectsOn: this.$store.state.activeLink === 3 }">
         <section class="projects" :style="backcolor">
             <h1 :style="heading">Past Projects</h1>
-            <div class="project">
+            <div :style="backproject" class="project">
                 <div>
                     <h2>Ritual</h2>
                     <h3>10. - 18.August 2019</h3>
@@ -26,7 +26,7 @@
                     v-bind="art"
                 />
             </div>
-            <div class="project">
+            <div class="project" :style="backproject">
                 <div>
                     <h2>Symbiosis</h2>
                     <h3>10.-19. August 2018</h3>
@@ -72,6 +72,9 @@ export default {
         return {
             backcolor: {
                 "background-color" : this.$store.getters.makeOpaque(true, 8)
+            },
+            backproject: {
+                "background-color" : this.$store.getters.makeOpaque(false, 9)
             },
             closeBack: {
                 "background-color" : this.$store.getters.makeOpaque(false, 8)
@@ -137,7 +140,7 @@ export default {
         width: 100%;
         height: 100vh;
         margin: 0;
-        padding: 0 0 300px 75px;
+        padding: 0 0 90px 0;
         z-index: 601;
         position: fixed;
         overflow-y: scroll;
@@ -149,17 +152,33 @@ export default {
         align-items: flex-start;
         box-sizing: border-box;
         display: block;
+        @media (min-width: 769px) {
+            padding: 0 0 300px 75px;
+        }
 
         h1 {
-            width: 97%;
-            height: 65px;
+            width: auto;
+            height: 50px;
             margin: 0;
-            padding: 0 0 10px 3%;
+            padding: 0 0 0 70px;
             display: flex;
             justify-content: flex-start;
-            align-items: flex-end;
+            align-items: center;
             font-family: $monofont;
-            font-size: 30px
+            font-size: 18px;
+            @media (min-width: 500px) {
+                font-size: 24px;
+                height: 75px;
+                padding: 0 0 0 100px; 
+            }
+            @media (min-width: 769px) {
+                align-items: flex-end;
+                font-size: 30px;
+                width: 97%;
+                height: 65px;
+                margin: 0;
+                padding: 0 0 10px 3%; 
+            }
         }
 
         .artworks {
@@ -168,24 +187,33 @@ export default {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            padding: 40px 0;
+            padding: 20px 0;
+            @media (min-width: 500px) {
+                padding: 40px 0;
+            }
         }
 
         .project {
             width: 100%;
-            background: rgba(255,255,255,0.9);
             display: flex;
             align-items: center;
             flex-direction: column;
-            padding: 40px 0;
+            padding: 20px 0;
+            @media (min-width: 500px) {
+                padding: 40px 0;
+            }
             @media (min-width: 1000px) {
                 flex-direction: row;
             }
 
             div {
-                width: 84%;
-                margin: 0 8%;
+                width: 90%;
+                margin: 0 5%;
                 display: inline-block;
+                @media (min-width: 500px) {
+                    width: 84%;
+                    margin: 0 8%;
+                }
                 @media (min-width: 1000px) {
                     width: 40%;
                     margin: 0 5%;
@@ -196,7 +224,10 @@ export default {
                 font-family: $monofont;
                 padding: 0 0 0 10%;
                 opacity: 0.7;
-                font-size: 40px;
+                font-size: 30px;
+                @media (min-width: 500px) {
+                   font-size: 40px; 
+                }
             }
 
             h3 {
@@ -208,8 +239,11 @@ export default {
                 width: 80%;
                 padding: 0 10%;
                 font-weight: 300;
-                font-size: 20px;
-                opacity: 0.7
+                font-size: 15px;
+                opacity: 0.7;
+                @media (min-width: 500px) {
+                    font-size: 20px;
+                }
 
             }
             h5 {
@@ -242,10 +276,10 @@ export default {
     }
     .close {
         position: absolute;
-        top: -75px;
-        left: -75px;
-        width: 75px;
-        height: 75px;
+        top: -50px;
+        left: -50px;
+        width: 50px;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -253,6 +287,12 @@ export default {
         transition: all 0.5s ease-in-out;
         opacity: 0.7;
         cursor: pointer;
+        @media (min-width: 500px) {
+            top: -75px;
+            left: -75px;
+            width: 75px;
+            height: 75px;
+        }
 
         svg {
             width: 70%;

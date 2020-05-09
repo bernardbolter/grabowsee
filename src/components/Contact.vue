@@ -33,17 +33,28 @@ export default {
 <style scoped lang="scss">
     .contact {
         position: fixed;
-        width: 50%;
-        top: 75px;
+        width: 100%;
+        top: auto;
+        bottom: 10px;
         left: 100%;
-        z-index: 301;
+        z-index: 1000;
         display: flex;
         flex-direction: column;
-        align-content: left;
         justify-content: center;
         transition: left 1s ease-in-out;
         padding: 40px 30px;
         box-sizing: border-box;
+        border-left: none;
+        @media (min-width: 500px) {
+            width: 60%;
+            bottom: 100px;
+        }
+        @media (min-width: 769px) {
+            width: 50%;
+            top: 75px;
+            bottom: auto;
+            z-index: 301;
+        }
         @media (min-width: 1000px) {
             top: 150px;
             width: 35%;
@@ -55,8 +66,14 @@ export default {
     }
 
     .contactOn {
-        left: 50%;
+        left: 20px;
         transition: left 1s ease-in-out;
+        @media (min-width: 500px) {
+            left: 40%;
+        }
+        @media (min-width: 769px) {
+            left: 50%;
+        }
         @media (min-width: 1000px) {
             left: 65%;
         }
@@ -70,7 +87,10 @@ export default {
         padding: 0 0 20px 0;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
+        @media (min-width: 500px) {
+           font-size: 16px; 
+        }
     }
 
     span {
