@@ -18,11 +18,7 @@ export default {
     data() {
         return {
             pad: 0,
-            hover: false,
-            background: {
-                'background-color' : this.$store.getters.makeOpaque(true, 4),
-                'color': this.$store.state.lightColor
-            }
+            hover: false
         }
     },
     mounted() {
@@ -31,7 +27,14 @@ export default {
     computed: {
         itemStyle() {
             return {
-                animation: this.pad +'s linear infinite alternate movein'
+                animation: this.pad +'s linear infinite alternate movein',
+            }
+        },
+        background() {
+            let active = this.$store.state.activeLink;
+            return {
+                'color': this.$store.state.lightColor,
+                "background-color" : (active === this.navId || this.hover) ? this.$store.getters.makeOpaque(true, 9) : this.$store.getters.makeOpaque(true, 4)
             }
         }
     },

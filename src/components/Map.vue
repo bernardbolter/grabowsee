@@ -6,7 +6,7 @@
     >
         <mapbox-map
             access-token ="pk.eyJ1IjoiYmVybmFyZGJvbHRlciIsImEiOiJjazlzZHIzODAxMnZzM2VydHB1NDNpdDhrIn0.KBjxoYzWqEbFc5r6qiEgsA"
-            map-style ="mapbox://styles/mapbox/dark-v10"
+            map-style ="mapbox://styles/mapbox/streets-v10"
             :zoom ='9'
             :center = "[13.292124792933455, 52.786265702929825]"
         >

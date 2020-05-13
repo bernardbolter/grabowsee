@@ -1,11 +1,7 @@
 <template>
     <div id="nav">
-        <div class="logo">
-            <img 
-                src="../assets/logo.png" 
-                alt="Countdown Grabowsee Logo"
-                @click="goHome" 
-            />
+        <div class="logo" @click="goHome">
+            <Logo />
         </div>
         <ul>
             <Item
@@ -20,11 +16,13 @@
 
 <script>
 import Item from "./Item.vue";
+import Logo from "./Logo.vue";
 
 export default {
     name: "Nav",
     components: {
-        Item
+        Item,
+        Logo
     },
     data() {
         return {
@@ -118,7 +116,7 @@ export default {
                 flex-direction: column;
             }
             @media (min-width: 1100px) {
-                margin: 0 0 0 20px;
+                margin: 0;
             }
         }
         .mobileLinksOn {

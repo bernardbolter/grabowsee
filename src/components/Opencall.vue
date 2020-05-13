@@ -63,7 +63,7 @@
                 rel="noopener"
                 :style="linkStyles"
             >Musician/Sound Artist</a>
-            <h2>Email us at globe.gallery@gmx.de with any questions. Please send also your proposal to this email address.</h2>
+            <h2>Email us at globe.gallery@gmx.de with any questions.</h2>
             <h2>Application deadline: 30th June 2020</h2>
             <p>A jury will select participants and a confirmation email will be sent to the accepted Participants  in July 2020. Also information about arrivals and how to get to the site.</p>
             <h2>We look forward to your proposals and welcome you to this year's Globe Gallery and exhibition!</h2>
