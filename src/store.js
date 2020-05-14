@@ -12,7 +12,7 @@ const store = new Vuex.Store({
     links: [
         { name: "about", id: 1, active: false },
         { name: "open call", id: 2, active: false },
-        { name: "past projects", id: 3, active: false },
+        { name: "archive", id: 3, active: false },
         { name: "contact", id: 4, active: false }
     ]
   },

@@ -57,13 +57,14 @@ export default {
             align-items: flex-start;
         }
         @media (min-width: 769px) {
-            width: 25%;
+            width: 170px;
             position: absolute;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
         }
-        @media (min-width: 1100px) {
+        @media (min-width: 1300px) {
+            width: 25%;
             align-items: center;
         }
 
@@ -82,7 +83,7 @@ export default {
                 width: 125px;
                 margin: 30px 0 0 20px;
             }
-            @media (min-width: 1100px) {
+            @media (min-width: 1300px) {
                 width: 170px;
                 margin: 50px 0 0;
             }
@@ -94,7 +95,7 @@ export default {
 
         ul {
             list-style: none;
-            width: 260px;
+            width: 190px;
             margin: 0 0 0 10px;
             padding: 0;
             position: relative;
@@ -103,9 +104,6 @@ export default {
             flex-wrap: wrap;
             left: 0;
             transition: left .75s ease-in-out;
-            @media (min-width: 400px) {
-                width: 230px;
-            }
             @media (min-width: 500px) {
                 width: 260px;
                 margin: 0;
@@ -115,7 +113,7 @@ export default {
                 margin: 0;
                 flex-direction: column;
             }
-            @media (min-width: 1100px) {
+            @media (min-width: 1300px) {
                 margin: 0;
             }
         }

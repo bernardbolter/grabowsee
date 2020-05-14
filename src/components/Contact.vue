@@ -16,7 +16,7 @@ export default {
         return {
             hover: false,
             background: {
-                "background-color" : this.$store.getters.makeOpaque(true, 6),
+                "background-color" : this.$store.getters.makeOpaque(true, 7),
                 "border-left" : `2px solid ${this.$store.getters.makeOpaque(false, 7)}`,
                 "border-top" : `2px solid ${this.$store.getters.makeOpaque(false, 7)}`,
                 "border-bottom" : `2px solid ${this.$store.getters.makeOpaque(false, 7)}`,
@@ -42,7 +42,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         transition: left 1s ease-in-out;
-        padding: 40px 30px;
+        padding: 15px 20px;
         box-sizing: border-box;
         border-left: none;
         @media (min-width: 500px) {
@@ -54,6 +54,7 @@ export default {
             top: 75px;
             bottom: auto;
             z-index: 301;
+            padding: 40px 30px;
         }
         @media (min-width: 1000px) {
             top: 150px;
@@ -87,8 +88,11 @@ export default {
         padding: 0 0 20px 0;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 14px;
-        @media (min-width: 500px) {
+        font-size: 12px;
+        @media (min-width: 400px) {
+           font-size: 14px; 
+        }
+        @media (min-width: 600px) {
            font-size: 16px; 
         }
     }
@@ -102,6 +106,12 @@ export default {
         padding: 0;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 11px;
+        @media (min-width: 400px) {
+           font-size: 13px; 
+        }
+        @media (min-width: 600px) {
+           font-size: 15px; 
+        }
     }
 </style>

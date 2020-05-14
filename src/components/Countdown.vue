@@ -77,13 +77,17 @@ export default {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    margin: 0;
+    margin: 110px 0 0 0;
     padding: 0;
     left: 0;
+    top: 0;
     position: fixed;
-    bottom: 100px;
     z-index: 100;
     @media (min-width: 500px) {
+        bottom: 150px;
+    }
+    @media (min-width: 769px) {
+        position: fixed;
         bottom: 150px;
     }
 }
@@ -92,13 +96,10 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    @media (min-width: 650px) {
-        width: 21%;
-    }
+    width: 21%;
 }
 .time_digits {
-    font-size: 70px;
+    font-size: 30px;
     font-weight: 400;
     font-family: $monofont;
     margin: 0;
@@ -116,9 +117,9 @@ export default {
     }
 }
 .time_text {
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 600;
-    margin: -10px 0 10px 30px;
+    margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     @media (min-width: 550px) {
@@ -139,16 +140,13 @@ export default {
     }
 }
 .time_between {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 4%;
     font-family: $monofont;
     font-weight: 300;
-    font-size: 50px;
-    @media (min-width: 650px) {
-        display: flex;
-    }
+    font-size: 30px;
     @media (min-width: 900px) {
         font-size: 69px;
     }

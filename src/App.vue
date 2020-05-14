@@ -2,8 +2,8 @@
   <div id="app" class="app" :style="globalTextColor">
     <Nav />
     <Background />
-    <Home />
     <Countdown />
+    <Home />
     <PastProjects />
     <Opencall />
     <About />
@@ -101,9 +101,18 @@ export default {
 <style lang="scss">
 @import url(https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap);
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 #app {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  top: 0;
 }
 * {
   -webkit-font-smoothing: antialiased;

@@ -21,7 +21,6 @@
             <h1>‘POWER’</h1>
         </section>
         <section class="inspiration">
-            <h2>Sometimes the <span class="power">fragility</span> of a situation has <span class="power">no shame</span>, the <span class="power">optimism</span> reveals a secretive <span class="power">hierarchy</span>. <span class="power">Abuse</span> and <span class="power">force</span> , <span class="power">quietly</span> and <span class="power">calmly</span> allow the ripples to become <span class="power">centered</span>. The <span class="power">ocean</span> waves filter it’s <span class="power">electricity</span> , halting the <span class="power">internet</span>. Energy concentrates in other forms. <span class="power">Women</span> , Men, bodies, animals, minerals, insects, plants feel the <span class="power">stillness</span> of a <span class="power">space</span>.  <span class="power">Sport</span> gives you physical <span class="power">strength</span>, <span class="power">Dominion</span> requires <span class="power">resistance</span>,  <span class="power">Suppression</span> of <span class="power">women</span>, children and men is a <span class="power">responsibility</span> of the <span class="power">people</span>. We can acquire <span class="power">materials</span> that can enforce <span class="power">connections</span> between <span class="power">people</span>, <span class="power">assertiveness</span> towards the mind. <span class="power">Self-serving</span> the <span class="power">oppressive</span> <span class="power">corruption</span> of <span class="power">money</span>.  Can our true <span class="power">weapons</span> be <span class="power">love</span> ?. <span class="power">The Sea</span> and <span class="power">the Sun</span> can be the <span class="power">chargers</span> for us, <span class="power">united</span>. <span class="power">A line of flight</span>.</h2>
             <h3>‘We live in Capitalism. Its power seems inescapable. So did the divine right of Kings. Any human power can be resisted and changed by human beings. Resistance and change often begin in art, and very often in our art, the art of words.”</h3>
             <p>Ursula le Guin</p>
         </section> 
@@ -70,7 +69,9 @@
             <div class="line" />
             <h1>DE Kurz</h1>
             <h2>Beschreibung:</h2>
-            <p>Globe Gallery ist eine alternative Kunstgalerie, die 2013 gegründet wurde, mitten in einem verlassenen Tuberkulose-Krankenhaus namens Heilstätte Grabowsee, 30 km nördlich von Berlin. Wir veranstalten jährlich eine Non-Profit-Kunstresidenz, die die künstlerische Zusammenarbeit durch Workshops, Lesungen, Performances, Zufallsereignisse und gemeinsames Leben fördert. Unser Ziel ist es, eine friedliche Gemeinschaft zu schaffen, die Co-Creation, Camping und Leben inmitten idyllischer Naturlandschaften mit Außenofen und Lagerfeuer beinhaltet. Neben der Erstellung von Kunst bitten wir jeden Teilnehmer, jeden Tag zwei Stunden „Arbeit vor Ort“ zu leisten, um zur Erhaltung der Immobilie beizutragen.</p>
+            <p>“Countdown Grabowsee” drückt die Sehnsucht aus, die uns mit diesem Projekt verbindet. Die Sehnsucht eigene und gemeinsame Erfahrungen an diesem Ort zu Teilen. Countdown ist Start und Ende zugleich, er vergeht in gespannter Erwartung und wenn er vergangen ist, dann ist er noch lange nicht vorbei. Das Ende des Countdowns ist ein angenehmes Zusammenzucken in Erwartung der Dinge die beginnen.</p>
+            <p>Globe Gallery bezeichnet einen Teil des Geländes am Grabowsee, Haus Nummer 5. Sie  ist eine alternative Kunstgalerie, die 2013 gegründet wurde, mitten in einem verlassenen Tuberkulose-Krankenhaus namens Heilstätte Grabowsee, 30 km nördlich von Berlin.</p>
+            <p>Wir veranstalten jährlich eine Non-Profit-Kunstresidenz, die die künstlerische Zusammenarbeit durch Workshops, Lesungen, Performances, Zufallsereignisse und gemeinsames Leben fördert. Unser Ziel ist es, eine friedliche Gemeinschaft zu schaffen, die Co-Creation, Camping und Leben inmitten idyllischer Naturlandschaften mit Außenofen und Lagerfeuer beinhaltet. Neben der Erstellung von Kunst bitten wir jeden Teilnehmer, jeden Tag zwei Stunden „Arbeit vor Ort“ zu leisten, um zur Erhaltung der Immobilie beizutragen</p>
             <h2>Sound und Musik:</h2>
             <p>Für die Globe Gallery 2020 wünschen wir uns eine rege Beteiligung von Klangkünstler_innen und Musiker_innen. Die Globe Gallery ist dabei offen für alle Arten von Musik, Klang, Klanginstallationen, Performance, akustisch oder elektronisch erzeugt, verstärkt, unverstärkt, analog und digital. Die Arbeiten sollten jedoch in irgendeiner Weise Bezug auf Grabowsee und das diesjährige Thema „Ritual“ nehmen.</p>
             <p>Falls Ihr mit Verstärkern usw. arbeiten möchtet ist es erforderlich eigenes Equipment mitzubringen. Am Ausstellungswochenende wird es eine Musikanlage geben.</p>
@@ -78,12 +79,27 @@
             <p>Der Ort zeichnet sich durch eine Vielzahl von Räumen und Sälen mit unterschiedlich Akustik aus. Allerdings sind der Großteil der Räume ohne Fenster und Türen, sie sind daher staubig und zumindestens Nachts nicht trocken da die Luftfeuchtigkeit schwankt. Des weiteren gibt es nicht in jedem Raum Stromversorgung. Es gibt jedoch die Möglichkeit Euer Equipment in einem trockenen Raum sicher und verschlossen zu lagern. Globe Gallery ist nicht eine traditionelle „White-Cube-Gallery“. Es ist vielmehr ein Gemeinschaftswerk aller beteiligten Künstler_innen. Es ist daher nicht im Sinne der Globe Gallery am ausschließlich am Ausstellungswochenende vorbeizukommen. Ein wichtiger Teil der Globe Gallery ist der gemeinschaftliche Entstehungsprozess der Kunstwerke. Bitte tragt daher auch Eure geplante Anwesenheit [d.h. wann möchtet Ihr An- und Abreisen] in das Anmeldeformular ein.</p>
             <h2 class="headspace">Anmeldung:</h2>
             <p>Bitte füllt unser Teilnahmeformular aus:</p>
+            <a 
+                href="https://globegallery2018.wufoo.com/forms/q142n8wr1xy0jjr/" 
+                target="_blank" 
+                rel="noopener"
+                :style="linkStyles"
+            >Artist/Creative</a>
+            <a 
+                href="https://globegallery2018.wufoo.com/forms/rk6r6wd0ymz1of/" 
+                target="_blank" 
+                rel="noopener"
+                :style="linkStyles"
+            >Musician/Sound Artist</a>
             <h2>Bei Fragen könnt Ihr uns über folgende E-Mail erreichen: globe.gallery@gmx.de.</h2>
             <h2>Bewerbungsschluss ist der 30. Juni 2020.</h2>
             <p>Eine Jury wählt die Teilnehmer aus und Ihr erhaltet im Nachgang eine Bestätigungsmail. In dieser Email findet Ihr dann auch alle weiteren Informationen.</p>
             <h2>Kosten:</h2>
             <p>Um die Grundkosten [Essen, Strom, Abwasser] zu decken, bitten wir um einen Beitrag von 15 € pro Tag. Getränke wie Bier, Wein Limo sind darin nicht enthalten. Diese können jedoch vor Ort gegen Unkostenbeitrag erworben werden. Der Grundkostenbeitrag von 15€/Tag sollte möglichst vor der Anreise per Überweisung oder Pay-Pal bezahlt werden. Die genauen Daten erhaltet Ihr in der Bestätigungsmail.</p>
             <p>Vor Ort gibt es einen „Fundusraum“ mit Materialien, aus diesem Raum können sich alle Teilnehmer_innen frei bedienen. Benötigt Ihr jedoch Spezialmaterialien so bitten wir Euch diese selbst mitzunehmen. Solltet Ihr dazu Fragen haben, so kontaktiert uns am besten per Email. Da die Veranstaltung in einem stillgelegten Krankenhaus stattfindet sind die Möglichkeiten beschränkt. Es gibt fließendes Wasser und in Teilen des Gebäudes Strom bzw. Beleuchtung. Internetverbindung und W-LAN können wir nicht anbieten.</p>
+            <h2 class="red">COVID 19:</h2>
+            <p class="red">In diesem Jahr sind die Bedingungen für die Globe Gallery besonders. Wir können derzeit nicht die Situation im August vorhersehen. Wir erarbeiten ein Konzept, wie wir die Globe Gallery durchführen können und die geltenden Hygieneregeln dabei beachten können.</p>
+            <p class="red">Bitte habt daher Verständnis dass es für  Art, Dauer und Form der Veranstaltung noch keinen festen Plan gibt. Wir halten Euch auf dem Laufenden.</p>
         </section>
     </div>
 </template>
@@ -163,19 +179,19 @@ export default {
                 font-size: 24px;
             }
             @media (min-width: 1400px) {
-                font-size: 30px
+                font-size: 30px;
             }
         }
         h2 {
-            font-size: 11px;
+            font-size: 13px;
             @media (min-width: 650px) {
-                font-size: 12px;
+                font-size: 14px;
             }
             @media (min-width: 1300px) {
-                font-size: 14px
+                font-size: 16px;
             }
             @media (min-width: 1400px) {
-                font-size: 16px
+                font-size: 18px;
             }
         }
         p {
@@ -189,7 +205,7 @@ export default {
                 font-size: 24px;
             }
             @media (min-width: 1400px) {
-                font-size: 28px
+                font-size: 28px;
             }
         }
     }
@@ -203,7 +219,10 @@ export default {
     }
     .title {
         width: 80%;
-        margin: 50px 10% 0 10%;
+        margin: 10px 10% 0 10%;
+        @media (min-width: 500px) {
+            margin: 50px 10% 0 10%;
+        }
 
         h5 {
             font-size: 15px;
@@ -242,23 +261,6 @@ export default {
             width: 80%;
             margin: 50px 10% 0 10%;
         }
-
-        h2 {
-            font-size: 15px;
-            font-weight: 600;
-            text-align: justify;
-            line-height: 1.7;
-            @media (min-width: 500px) {
-                font-size: 16px;
-            }
-            @media (min-width: 1400px) {
-                font-size: 18px
-            }
-
-            .power {
-                background-color: red;
-            }
-        }
         h3 {
             font-size: 14px;
             font-weight: 300;
@@ -270,7 +272,7 @@ export default {
                 line-height: 2;
             }
             @media (min-width: 1400px) {
-                font-size: 19px
+                font-size: 19px;
             }
         }
         p {
@@ -278,7 +280,7 @@ export default {
             font-weight: 500;
             text-align: right;
             @media (min-width: 1400px) {
-                font-size: 17px
+                font-size: 17px;
             }
         }
     }

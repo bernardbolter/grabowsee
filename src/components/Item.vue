@@ -63,7 +63,7 @@ export default {
         @media (min-width: 768px) {
             text-align: center;
         }
-        @media (min-width: 1100px) {
+        @media (min-width: 1300px) {
             font-size: 18px;
         }
 

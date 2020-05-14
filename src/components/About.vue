@@ -5,16 +5,16 @@
         :style="back"
         >
             <h3>
-                Globe Gallery is an alternative Art Gallery starting in 2013, in the middle of a derelict hospital, Heilstätte Grabowsee, 30km North of Berlin.
+                ‘Countdown Grabowsee’ is a phrase given to this project from the beginning, a countdown to look forward to.
             </h3>
             <p>
-                We host an annual non-profit and alternative gathering with a full week of expressing your creativity through making art, inspiring workshops, readings, performances and social exchange. It’s an open space for collaboration and we encourage you to contribute to the experience through your participation. Think of a DIY atmosphere, co-creation, camping amongst a derelict hospital with rural infrastructure but with its on lake and fire place - and be prepared or some unusual group activities.
+                ‘Globe Gallery’ was the initial name for a part of the site that could voice experiences through a site specific exhibition that expanded on the ground floor of the old sleeping quarters.
             </p>
             <p>
-                Globe Gallery aims to be a platform for everyone who wants to share their work in a dedicated, dogma free and one-of-a-kind environment.
+                This  project started in 2013 with a small group who met building installations in an old basement club in Berlin, year after year it evolved, developing into the unexplainable.
             </p>
-            <p>
-                Besides creating art we need to maintain the infrastructure of the property with ‘Site Work’ this is two hours a day during your stay in order to give something back to the place.
+            <p class="botpad">
+                The site is situated in the middle of a derelict tuberculosis hospital called Heilstätte Grabowsee, 30km North of Berlin.
             </p>
     </div>
 </template>
@@ -25,7 +25,7 @@ export default {
     data() {
         return {
             back: {
-                "background-color" : this.$store.getters.makeOpaque(false, 9)
+                "background-color" : this.$store.getters.makeOpaque(false, 7)
             }
         }
     }
@@ -36,7 +36,7 @@ export default {
     .about {
         width: 100%;
         margin: 0;
-        padding: 0 0 90px 0;
+        padding: 0;
         height: 100vh;
         top: -100%;
         left: 0;
@@ -48,7 +48,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        overflow-y: scroll;
+        overflow: hidden;
         @media (min-width: 550px) {
             overflow-y: hidden;
         }
@@ -68,12 +68,11 @@ export default {
 
         h3 {
             width: 90%;
-            margin: 170px 5% 0 5%;
+            margin: 220px 5% 0 5%;
             font-size: 17px;
             padding: 0;
             line-height: 1.6;
             font-weight: 600;
-            font-family: $monofont;
             @media (min-width: 500px) {
                 margin: 190px 5% 0 5%;
             }
@@ -107,9 +106,9 @@ export default {
             width: 90%;
             margin: 15px 5%;
             padding: 0;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.6;
-            font-size: 14px;
+            font-size: 15px;
             opacity: 0.9;
             z-index: 1000;
             @media (min-width: 1000px) {
@@ -125,9 +124,13 @@ export default {
                 font-size: 18px;
             }
         }
+        .botpad {
+            padding: 0 0 150px 0;
+        }
     }
     .aboutOn {
         top: 0;
         transition: top 1s ease-in-out;
+        overflow-y: scroll;
     }
 </style>

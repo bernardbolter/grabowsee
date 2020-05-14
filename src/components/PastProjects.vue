@@ -1,7 +1,7 @@
 <template>
     <div class="pastprojects" :class="{ pastProjectsOn: this.$store.state.activeLink === 3 }">
         <section class="projects" :style="backcolor">
-            <h1 :style="heading">Past Projects</h1>
+            <h1 :style="heading">Archive</h1>
             <div :style="backproject" class="project">
                 <div>
                     <h2>Ritual</h2>

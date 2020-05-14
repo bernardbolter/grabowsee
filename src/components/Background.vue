@@ -1,12 +1,19 @@
 <template>
-    <div class="bg-wrap">
+    <div class="bg-wrap" :style="backColor">
         <div class="bg-image" />
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Background'
+    name: 'Background',
+    data() {
+        return {
+            backColor: {
+                "background-color" : this.$store.getters.makeOpaque(true, 9) 
+            }
+        }
+    }
 }
 </script>
 
@@ -28,5 +35,6 @@ export default {
         background-size: cover;
         height: 100vh;
         width: 100vw;
+        opacity: 0.8;
     }
 </style>

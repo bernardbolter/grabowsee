@@ -64,42 +64,50 @@
     "cg2018": [
         {
             "id" : 1,
-            "image" : "01",
+            "name" : "Christian Buchner",
+            "image" : "christian2018",
             "landscape" : true
         }, 
         {
             "id" : 2,
-            "image" : "02",
+            "name" : "Mirela Alister",
+            "image" : "mirela2018",
             "landscape" : true
         }, 
         {
             "id" : 3,
-            "image" : "03",
+            "name" : "Liina Nilsson",
+            "image" : "liina2018_2",
             "landscape" : true
         }, 
         {
             "id" : 4,
-            "image" : "04",
+            "name" : "Liina Nilsson",
+            "image" : "liina2018",
             "landscape" : true
         }, 
         {
             "id" : 5,
-            "image" : "05",
+            "name" : "Yotaro Niwa",
+            "image" : "yotaro2018",
             "landscape" : true
         }, 
         {
             "id" : 6,
-            "image" : "06",
+            "name" : "Yan Gi Cheng",
+            "image" : "yan2018",
             "landscape" : true
         }, 
         {
             "id" : 7,
-            "image" : "07",
+            "name" : "Alice Morey",
+            "image" : "alice2018_2",
             "landscape" : true
         }, 
         {
             "id" : 8,
-            "image" : "08",
+            "name" : "Alice Morey",
+            "image" : "alice2018_1",
             "landscape" : true
         }, 
         {
@@ -109,7 +117,8 @@
         }, 
         {
             "id" : 10,
-            "image" : "10",
+            "name" : "Nina Jørgensen",
+            "image" : "nina2018",
             "landscape" : true
         }  
     ]
