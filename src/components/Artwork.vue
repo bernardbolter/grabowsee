@@ -26,14 +26,14 @@ export default {
             return {
                 "background-color" : this.$store.getters.makeOpaque(false, 6),
                 "margin-left" : this.randomNumber(20,150) + 'px',
-                "margin-top" : '-' + this.randomNumber(60,300) + 'px'
+                "margin-top" : '-' + this.randomNumber(50,200) + 'px'
             }
         },
         cardOffsetSmall() {
             return {
                 "background-color" : this.$store.getters.makeOpaque(false, 6),
                 "margin-left" : this.randomNumber(10,75) + 'px',
-                "margin-top" : '-' + this.randomNumber(60,100) + 'px'
+                "margin-top" : '-' + this.randomNumber(40, 80) + 'px'
             }
         }
     },

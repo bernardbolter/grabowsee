@@ -39,8 +39,8 @@ export default {
     },
     methods: {
         getWidth() {
-            this.xs = []; 
-            this.browserWidth = window.innerWidth;
+            this.xs = [];
+                this.browserWidth = window.innerWidth;
         },
         animateWave() {
             this.animateID = setInterval(function() {

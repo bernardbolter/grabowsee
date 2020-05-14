@@ -48,6 +48,7 @@ export default {
         @media (min-width: 500px) {
             width: 60%;
             bottom: 100px;
+            padding: 20px 20px;
         }
         @media (min-width: 769px) {
             width: 50%;

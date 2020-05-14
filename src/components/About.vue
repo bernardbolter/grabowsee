@@ -49,17 +49,13 @@ export default {
         flex-direction: column;
         justify-content: flex-start;
         overflow: hidden;
-        @media (min-width: 550px) {
-            overflow-y: hidden;
-        }
         @media (min-width: 650px) {
             padding: 0;
         }
         @media (min-width: 769px) {
             width: 60%;
-            position: absolute;
+            position: fixed;
             left: 15%;
-            justify-content: center;
         }
         @media (min-width: 1100px) {
             width: 50%;
@@ -68,7 +64,7 @@ export default {
 
         h3 {
             width: 90%;
-            margin: 220px 5% 0 5%;
+            margin: 170px 5% 0 5%;
             font-size: 17px;
             padding: 0;
             line-height: 1.6;
@@ -80,22 +76,15 @@ export default {
                 width: 80%;
                 margin: 190px 15% 0 5%;
             }
-            @media (min-width: 700px) {
-                width: 65%;
-                margin: 200px 30% 0 5%;
-            }
             @media (min-width: 769px) {
                 width: 90%;
                 font-size: 18px;
-                margin: 0 5%;
+                margin: 100px 5% 0;
             }
             @media (min-width: 1000px) {
-                font-size: 18px;
-                width: 80%;
-                margin: 0 10%;
-            }
-            @media (min-width: 1100px) {
                 font-size: 20px;
+                width: 80%;
+                margin: 100px 10% 0;
             }
             @media (min-width: 1500px) {
                 font-size: 22px;
@@ -113,9 +102,9 @@ export default {
             z-index: 1000;
             @media (min-width: 1000px) {
                 z-index: 202;
-                font-size: 14px;
+                font-size: 16px;
                 width: 80%;
-                margin: 0 10%;
+                margin: 15px 10%;
             }
             @media (min-width: 1100px) {
                 font-size: 16px;
@@ -126,11 +115,20 @@ export default {
         }
         .botpad {
             padding: 0 0 150px 0;
+            @media (min-width: 600px) {
+                padding: 0 0 250px 0;
+            }
+            @media (min-width: 768px) {
+                padding: 0;
+            }
         }
     }
     .aboutOn {
         top: 0;
         transition: top 1s ease-in-out;
         overflow-y: scroll;
+        @media (min-width: 768px) {
+            overflow-y: hidden;
+        }
     }
 </style>

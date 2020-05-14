@@ -84,11 +84,11 @@ export default {
     position: fixed;
     z-index: 100;
     @media (min-width: 500px) {
-        bottom: 150px;
+        bottom: 100px;
+        top: auto;
     }
     @media (min-width: 769px) {
         position: fixed;
-        bottom: 150px;
     }
 }
 .time_block {
@@ -103,8 +103,8 @@ export default {
     font-weight: 400;
     font-family: $monofont;
     margin: 0;
-    @media (min-width: 550px) {
-       font-size: 125px; 
+    @media (min-width: 500px) {
+       font-size: 65px; 
     }
     @media (min-width: 650px) {
         font-size: 75px;
@@ -122,9 +122,9 @@ export default {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    @media (min-width: 550px) {
-        font-size: 16px;
-        margin: -10px 0 10px 50px;   
+    @media (min-width: 500px) {
+        font-size: 13px;
+        margin: -10px 0 0 0;   
     }
     @media (min-width: 650px) {
         font-size: 13px;
@@ -147,6 +147,9 @@ export default {
     font-family: $monofont;
     font-weight: 300;
     font-size: 30px;
+    @media (min-width: 500px) {
+        font-size: 45px;
+    }
     @media (min-width: 900px) {
         font-size: 69px;
     }

@@ -110,7 +110,7 @@ export default {
     data() {
         return {
             background: {
-                "background-color" : this.$store.getters.makeOpaque(false, 9)
+                "background-color" : this.$store.getters.makeOpaque(false, 8)
             },
             linkStyles: {
                 "background-color" : this.$store.getters.makeOpaque(true, 8),
@@ -318,10 +318,10 @@ export default {
         }
 
         h2 {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 700;
             @media (min-width: 500px) {
-                font-size: 16px;
+                font-size: 18px;
             }
         }
 

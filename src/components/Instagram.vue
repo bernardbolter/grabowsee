@@ -52,7 +52,7 @@ export default {
     .instagram {
         width: 100%;
         height: auto;
-        top: 200px;
+        top: 155px;
         right: -500px;
         position: fixed;
         transition: right 1s ease-in-out;

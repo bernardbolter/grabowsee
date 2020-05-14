@@ -58,7 +58,6 @@ export default {
         }
         @media (min-width: 769px) {
             width: 170px;
-            position: absolute;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
@@ -105,7 +104,7 @@ export default {
             left: 0;
             transition: left .75s ease-in-out;
             @media (min-width: 500px) {
-                width: 260px;
+                width: 210px;
                 margin: 0;
             }
             @media (min-width: 769px) {

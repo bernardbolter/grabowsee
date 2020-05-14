@@ -33,21 +33,30 @@ export default {
         transition: opacity 1s ease-in-out;
         opacity: 0;
         margin: 20px 5% 200px 5%;
-        top: 120px;
+        top: 160px;
         position: fixed;
-        height: 100vh;
         z-index: 2;
+        @media (min-width: 500px) {
+            align-items: flex-end;
+            top: 90px;
+        }
         @media (min-width: 650px) {
-            margin: 250px 0 0 10%;
-            align-items: flex-start;
+            margin: 20px 5% 185px 5%;
         }
         @media (min-width: 769px) {
-            width: 80%;
-            margin: 5% 0 0 20%;
+            width: 75%;
+            margin: 5% 5% 0 20%;
+            top: 0; 
         }
         @media (min-width: 1100px) {
-            margin: 7% 0 0 25%;
+            margin: 75px 5% 0 20%;
             width: 75%;
+            align-items: flex-start;
+        }
+        @media (min-width: 1400px) {
+            margin: 100px 15% 0 20%;
+            width: 65%;
+            align-items: flex-start;
         }
 
         h1 {
@@ -60,34 +69,32 @@ export default {
             background-color: #6dc0a9;
             @media (min-width: 500px) {
                 font-size: 30px;
+                margin: 0 30px 0 0;
             }
             @media (min-width: 650px) {
                 font-size: 40px;
             }
             @media (min-width: 769px) {
-                font-size: 70px;
-                margin: 0 0 -44px -25px;
+                font-size: 50px;
             }
             @media (min-width: 1100px) {
-                font-size: 90px;
-                margin: 0 0 -50px -33px;
+                font-size: 60px;
+                margin: 0 0 -20px -33px;
+            }
+            @media (min-width: 1300px) {
+                margin: 0 0 -20px 10px;
             }
             @media (min-width: 1500px) {
-                font-size: 110px;
-                margin: 0 0 -60px -40px;
+                font-size: 70px;
+                margin: 0;
             }
         }
         .inspiration {
-        background-color: none !important;
-        width: 90%;
-        margin: 0 5% 0 5%;
-        @media (min-width: 500px) {
-            width: 70%;
-            margin: 0;
-            padding: 30px 25% 30px 5%;
-            border-radius: 0 0 0 60px;
-        }
-
+            width: 90%;
+            margin: 0 5% 0 5%;
+            @media (min-width: 500px) {
+                margin: 10px 5% 0 5%;
+            }
             h2 {
                 font-size: 15px;
                 font-weight: 600;
@@ -95,9 +102,14 @@ export default {
                 line-height: 1.7;
                 @media (min-width: 500px) {
                     font-size: 16px;
+                    line-height: 1.8;
+                }
+                @media (min-width: 1300px) {
+                    font-size: 18px;
+                    line-height: 2;
                 }
                 @media (min-width: 1400px) {
-                    font-size: 18px
+                    font-size: 20px;
                 }
 
                 .power {
@@ -110,8 +122,6 @@ export default {
         opacity: 1;
         transition: opacity 1s ease-in-out;
         position: relative;
-        height: auto;
-        top: 160px;
         z-index: 3000;
     }
 </style>
