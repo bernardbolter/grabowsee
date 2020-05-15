@@ -38,9 +38,9 @@ export default {
         margin: 0;
         padding: 0;
         height: 100vh;
-        top: -100%;
+        top: -100vh;
         left: 0;
-        position: absolute;
+        position: fixed;
         transition: top 1s ease-in-out;
         background: #000;
         z-index: 202;
