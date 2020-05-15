@@ -164,6 +164,7 @@ export default {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            font-weight: 400;
             font-family: $monofont;
             font-size: 18px;
             @media (min-width: 500px) {
@@ -173,7 +174,7 @@ export default {
             }
             @media (min-width: 769px) {
                 align-items: flex-end;
-                font-size: 30px;
+                font-size: 34px;
                 width: 97%;
                 height: 65px;
                 margin: 0;

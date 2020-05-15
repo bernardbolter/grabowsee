@@ -144,7 +144,6 @@ export default {
     justify-content: center;
     align-items: center;
     width: 4%;
-    font-family: $monofont;
     font-weight: 300;
     font-size: 30px;
     @media (min-width: 500px) {
