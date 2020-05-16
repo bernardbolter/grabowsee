@@ -5,13 +5,13 @@
         :style="back"
         >
             <h3>
-                ‘Countdown Grabowsee’ is a phrase given to this project from the beginning, a countdown to look forward to.
+                This  project started in 2013 with a small group who met building installations in an old basement club in Berlin, year after year it evolved, developing into the unexplainable.
             </h3>
             <p>
                 ‘Globe Gallery’ was the initial name for a part of the site that could voice experiences through a site specific exhibition that expanded on the ground floor of the old sleeping quarters.
             </p>
             <p>
-                This  project started in 2013 with a small group who met building installations in an old basement club in Berlin, year after year it evolved, developing into the unexplainable.
+                ‘Countdown Grabowsee’ is a phrase given to this project from the beginning, a countdown to look forward to.
             </p>
             <p class="botpad">
                 The site is situated in the middle of a derelict tuberculosis hospital called Heilstätte Grabowsee, 30km North of Berlin.
@@ -65,29 +65,29 @@ export default {
         h3 {
             width: 90%;
             margin: 170px 5% 0 5%;
-            font-size: 17px;
+            font-size: 15px;
             padding: 0;
             line-height: 1.6;
             font-weight: 600;
             @media (min-width: 500px) {
-                margin: 190px 5% 0 5%;
+                margin: 190px 5% 17px 5%;
             }
             @media (min-width: 650px) {
                 width: 80%;
-                margin: 190px 15% 0 5%;
+                margin: 190px 15% 17px 5%;
             }
             @media (min-width: 769px) {
                 width: 90%;
-                font-size: 18px;
-                margin: 100px 5% 0;
+                font-size: 16px;
+                margin: 100px 5% 17px;
             }
             @media (min-width: 1000px) {
-                font-size: 20px;
+                font-size: 17px;
                 width: 80%;
-                margin: 100px 10% 0;
+                margin: 100px 10% 17px;
             }
             @media (min-width: 1500px) {
-                font-size: 22px;
+                font-size: 18px;
             }
         }
 
