@@ -4,7 +4,7 @@
     <Background />
     <Countdown />
     <Home />
-    <PastProjects />
+    <Archive />
     <Opencall />
     <About />
     <Instagram />
@@ -31,7 +31,7 @@ import Nav from "./components/Nav.vue";
 import About from './components/About.vue';
 import Instagram from "./components/Instagram.vue"
 import Opencall from './components/Opencall.vue';
-import PastProjects from "./components/PastProjects.vue";
+import Archive from "./components/Archive.vue";
 import Contact from "./components/Contact.vue";
 import Map from "./components/Map.vue";
 
@@ -67,7 +67,7 @@ export default {
     Home,
     Countdown,
     Wave,
-    PastProjects,
+    Archive,
     Opencall,
     About,
     Instagram,

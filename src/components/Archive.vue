@@ -1,5 +1,5 @@
 <template>
-    <div class="pastprojects" :class="{ pastProjectsOn: this.$store.state.activeLink === 3 }">
+    <div class="archive" :class="{ archiveOn: this.$store.state.activeLink === 3 }">
         <section class="projects" :style="backcolor">
             <h1 :style="heading">Archive</h1>
             <div :style="backproject" class="project">
@@ -20,11 +20,7 @@
                 </div>
             </div>
             <div class="artworks">
-                <Artwork 
-                    v-for="art in this.shuffledArt2019"
-                    :key="art.id"
-                    v-bind="art"
-                />
+                <Artworks v-bind:artworks="this.shuffledArt2019" />
             </div>
             <div class="project" :style="backproject">
                 <div>
@@ -38,13 +34,7 @@
                     <p>Sasha Walmroth, Christian Buchner, Carlos Froelich, Andy Aged, Alice Morey, Zwek, Yan Gi Cheng, Bernard Bolter, Fellipe Vergani, Mirela Alister, Sandre Julve, Mai Linh Bui, Maithu Bui, Thea Ludcock, Tina Nedo, Liina Nilsson, Maitane Midby, Rocco Ruglio-Misurelll, Rob Blake, Christine Cheung, Laure Boer, Bernard Bolter, Majse Vilstrup, Karolina Svärd, Keturah Cummings, Tania Gomes, Nina Jørgensen, Philipp Halfmann, Yotaro Niwa, Evil Twin, Aurore del Rio, Yannik Doernte, Sebastian Völkers, Nancy Hillen, Valerie Vaernewyck, Louisa Elderton, David Braithwaite, Werner Kernebeck, Isabel Cavenecia, Sarah Grether, Lady Gaby, Camila McHugh, Christine Schwarz, KAVALL, AYRIE, Daniel Kupferberg,Toby Saunders, Ingwa, UMLAUT</p>
                 </div>
             </div>
-            <div class="artworks">
-                <Artwork 
-                    v-for="art in this.shuffledArt2018"
-                    :key="art.id"
-                    v-bind="art"
-                />
-            </div>
+            <Artworks v-bind:artworks="shuffledArt2018" />
         </section>
         <div class="back two" :style="backcolor" />
         <div class="close" :style="closeBack" @click="close" :class="{ closeProjectsOn: this.$store.state.activeLink === 3 }">
@@ -60,13 +50,13 @@
 </template>
 
 <script>
-import past from "../data/past.json";
-import Artwork from "./Artwork.vue";
+import archive from "../data/archive.json";
+import Artworks from "./Artworks.vue";
 
 export default {
-    name: "PastProjects",
+    name: "Archive",
     components: {
-        Artwork
+        Artworks
     },
     data() {
         return {
@@ -89,14 +79,14 @@ export default {
                 "background-color" : this.$store.getters.makeOpaque(false, 6),
                 color : this.$store.getters.makeOpaque(true, 8)
             },
-            past,
+            archive,
             shuffledArt2019: [],
             shuffledArt2018: []
         }
     },
-    mounted() {
-        this.shuffledArt2019 = this.shuffle(this.past.cg2019);
-        this.shuffledArt2018 = this.shuffle(this.past.cg2018);
+    created() {
+        this.shuffledArt2019 = this.shuffle(this.archive.cg2019);
+        this.shuffledArt2018 = this.shuffle(this.archive.cg2018);
     },
     methods: {
         close() {
@@ -118,7 +108,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .pastprojects {
+    .archive {
         width: 100%;
         height: 100vh;
         position: absolute;
@@ -181,19 +171,6 @@ export default {
                 padding: 0 0 10px 3%; 
             }
         }
-
-        .artworks {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0;
-            @media (min-width: 500px) {
-                padding: 40px 0;
-            }
-        }
-
         .project {
             width: 100%;
             display: flex;
@@ -271,7 +248,7 @@ export default {
             }
         }
     }
-    .pastProjectsOn .projects {
+    .archiveOn .projects {
         top: 0;
         transition: top 1s ease-in-out
     }
@@ -315,7 +292,7 @@ export default {
         z-index: 600;
         transition: left 1s ease-in-out
     }
-    .pastProjectsOn .two {
+    .archiveOn .two {
         left: 0;
         transition: left 1s ease-in-out
     }

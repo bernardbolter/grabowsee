@@ -1,6 +1,6 @@
 <template>
     <div class="bg-wrap" :style="backColor">
-        <div class="bg-image" />
+        <div class="bg-image" :style="backImage" />
     </div>
 </template>
 
@@ -9,8 +9,21 @@ export default {
     name: 'Background',
     data() {
         return {
+            number: null,
             backColor: {
-                "background-color" : this.$store.getters.makeOpaque(true, 9) 
+                "background-color" : this.$store.getters.makeOpaque(true, 9)
+            }
+        }
+    },
+    mounted() {
+        this.number = Math.floor(Math.random() * 2);
+    },
+    computed: {
+        backImage() {
+            var randomNumber = Math.floor(Math.random() * 2) + 1;
+            console.log(randomNumber);
+            return {
+                "background-image" : `url("/background/bg_${randomNumber}.jpg")`
             }
         }
     }
@@ -31,7 +44,9 @@ export default {
         z-index: -1;
     }
     .bg-image {
-        background: url('~@/assets/bg-image.jpg') no-repeat center center fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
         background-size: cover;
         height: 100vh;
         width: 100vw;
