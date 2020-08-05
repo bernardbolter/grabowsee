@@ -34,7 +34,7 @@ export default {
         return {
             nextId: 11,
             currentPage: 0,
-            pageSize: 3,
+            pageSize: 11,
             visibleArtworks: [],
             totalPages: 0
         }
@@ -75,5 +75,6 @@ export default {
     }
     .pagination {
         color: white;
+        display: none;
     }
 </style>

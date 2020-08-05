@@ -5,7 +5,7 @@
     <Countdown />
     <Home />
     <Archive />
-    <Opencall />
+    <Exhibition />
     <About />
     <Instagram />
     <Wave 
@@ -30,7 +30,8 @@ import Wave from './components/Wave.vue';
 import Nav from "./components/Nav.vue";
 import About from './components/About.vue';
 import Instagram from "./components/Instagram.vue"
-import Opencall from './components/Opencall.vue';
+// import Opencall from './components/Opencall.vue';
+import Exhibition from "./components/Exhibition.vue"
 import Archive from "./components/Archive.vue";
 import Contact from "./components/Contact.vue";
 import Map from "./components/Map.vue";
@@ -68,7 +69,8 @@ export default {
     Countdown,
     Wave,
     Archive,
-    Opencall,
+    // Opencall,
+    Exhibition,
     About,
     Instagram,
     Contact,

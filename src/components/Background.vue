@@ -20,7 +20,7 @@ export default {
     },
     computed: {
         backImage() {
-            var randomNumber = Math.floor(Math.random() * 2) + 1;
+            var randomNumber = Math.floor(Math.random() * 8) + 1;
             console.log(randomNumber);
             return {
                 "background-image" : `url("/background/bg_${randomNumber}.jpg")`
@@ -50,6 +50,6 @@ export default {
         background-size: cover;
         height: 100vh;
         width: 100vw;
-        opacity: 0.8;
+        opacity: 0.7;
     }
 </style>

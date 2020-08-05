@@ -6,7 +6,7 @@
         @mouseover="hover = true"
         @mouseleave="hover = false"
     ><span 
-        :style="background"
+        :style="background" 
         :class="{ active: hover }"    
     >{{ name }}</span></li>
 </template>
