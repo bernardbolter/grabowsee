@@ -33,7 +33,7 @@ export default {
     data() {
         return {
             now: new Date(),
-            date: Math.trunc(new Date(2020, 7, 15, 18) / 1000),
+            date: Math.trunc(new Date(2021, 7, 11, 18) / 1000),
             color: {
                 "color" : this.$store.getters.makeOpaque(false, 9)
             }
@@ -77,7 +77,7 @@ export default {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    margin: 110px 0 0 0;
+    margin: 125px 0 0 0;
     padding: 0;
     left: 0;
     top: 0;

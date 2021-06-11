@@ -2,39 +2,16 @@
     <div class="archive" :class="{ archiveOn: this.$store.state.activeLink === 3 }">
         <section class="projects" :style="backcolor">
             <h1 :style="heading">Archive</h1>
-            <div :style="backproject" class="project">
-                <div>
-                    <h2>Ritual</h2>
-                    <h3>10. - 18.August 2019</h3>
-                    <h4>“Ritual, whether secular or sacred binds groups together, ensuring their harmonious functioning by generating and maintaining orders of meaning, purpose and value”</h4>
-                    <h5>(Barry Stephenson)</h5>
-                    <h6>Curated by Sonja Teszler & Yan Gi Cheng.</h6>
-                    <h6>Organised by Philip Schrader & Alice Morey.</h6>
+            <Event v-for="event in events.events" :key="event.year" :event="event" />
+            <a class="archive-link" href="https://docs.google.com/forms/d/1tVd_yZ0VviDj5gFe3Zz3mhdvZdlXi6CAGiuTpV_tEm0" target="_blank">
+                <p>If you have participated in a previous residency and would like your work to be in the archive. Click this link and fill out the google form.</p> 
+                <div class="right-arrow-svg">
+                    <svg viewBox="0 0 51 51">
+                        <path fill="rgba(255,255,255,0.6)" d="M14.9737 20.6052C14.1842 21.3947 14.1842 22.6579 14.9737 23.3947C15.7632 24.1842 17.0263 24.1842 17.7632 23.3947L23.5 17.6579V38.0263C23.5 39.1315 24.3948 40.0263 25.5 40.0263C26.6053 40.0263 27.5 39.1315 27.5 38.0263V17.7105L33.2369 23.4473C34.0263 24.2368 35.2895 24.2368 36.0263 23.4473C36.3948 23.0789 36.6053 22.5526 36.6053 22.0263C36.6053 21.5 36.3948 21.0263 36.0263 20.6052L26.9211 11.5C26.5526 11.1315 26.0263 10.921 25.5 10.921C24.9737 10.921 24.4474 11.1315 24.079 11.5L14.9737 20.6052Z" />
+                        <path fill="rgba(255,255,255,0.6)" d="M0.5 25.5C0.5 39.2895 11.7105 50.5 25.5 50.5C39.2895 50.5 50.5 39.2895 50.5 25.5C50.5 11.7105 39.2895 0.5 25.5 0.5C11.7105 0.5 0.5 11.7105 0.5 25.5ZM46.5526 25.5C46.5526 37.0789 37.0789 46.5526 25.5 46.5526C13.9211 46.5526 4.44737 37.0789 4.44737 25.5C4.44737 13.9211 13.9211 4.44737 25.5 4.44737C37.0789 4.44737 46.5526 13.9211 46.5526 25.5Z" />
+                    </svg>
                 </div>
-                <div>
-                    <h3>Participants:</h3>
-                    <h4>Sounds & Performance</h4>
-                    <p>Pina Ruecker, Andy Aquarius, Luysali Theisen, Florentin Scheicher, Lukas Klein, Michal Krajczok, Joanna Harvey, Nils Bloch, Oliver Holyoake, Maja Kala, Liza Casullo, Rachel Margetts, Fanny Sorgo, Fellipe Vergani & Eva Geckeler, Karolina Svärd, Tabea Briggs, Laure Boer, Jack Dove</p>
-                    <h4>Art & Installation</h4>
-                    <p>Dietrich Meyer, Jérôme Pretot, YADA YADA, Carrick Bell, Keturah Cummings, Tara Dominguez, Brogan Geurts, Rocco Ruglio-Misurell, Mars Mandél, Alana Lynch, Yuko Ishida, Lale Willan, Sascha Walmroth, Pippa Brabyn, Toby Saunders, Robert & Frank, Magdalena Zagorski, Rob Blake, Yui Shimizu, Maitane Midby, Alex Porter, Tine Nedbo, Lina Schobel, Zwek, Lucia Krug, Max Fowler, Therese Resi, Mario Campos, Liina Nilson, Leander Leutzendorff, Nina Jørgensen, Volker Tolle, Katharina Bonk, Mano Krach, Konstantin Schreiber, Veronica Gudmundson, Aurora Del Rio, Gregorio Acevedo, Leonardo Rossi, Tanya Barnau Sythoff, Alvin McIntyre, Tanya Barnau Sythoff, Alexandra Vasilieva, Max Lunn, Chrischa Oswald,  Yannik Dörnte, Agrina Vllasaliu, Werner Kernebeck, David Braithwaite, Christine Cheung, Sean Coughlin, Mikołaj Rogowski, Hannah Turner-Duffin, Aurelia Van Kempen, Matthew Coleman, Sandra Julve, Anke Westermann, Sheng Jiang, Lapo Simeoni, Louisa Elderton, Sara Ezzell, Rosie Dahlstrom</p>
-                </div>
-            </div>
-            <div class="artworks">
-                <Artworks v-bind:artworks="this.shuffledArt2019" />
-            </div>
-            <div class="project" :style="backproject">
-                <div>
-                    <h2>Symbiosis</h2>
-                    <h3>10.-19. August 2018</h3>
-                    <h4>‘Symbiosis’ is any type of a close and long-term biological interaction between two different biological organisms. Each symbiont may be of the same or of different species. In Fostering such unexpected unions, symbiosis becomes the ultimate survival of the unfitted that defy all rules and predictions by means of collaborative creativity.</h4>
-                    <h6>Curated by Yan Gi Cheng. Organised by Philip Schrader & Alice Morey.</h6>
-                </div>
-                <div>
-                    <h3>Participants:</h3>
-                    <p>Sasha Walmroth, Christian Buchner, Carlos Froelich, Andy Aged, Alice Morey, Zwek, Yan Gi Cheng, Bernard Bolter, Fellipe Vergani, Mirela Alister, Sandre Julve, Mai Linh Bui, Maithu Bui, Thea Ludcock, Tina Nedo, Liina Nilsson, Maitane Midby, Rocco Ruglio-Misurelll, Rob Blake, Christine Cheung, Laure Boer, Bernard Bolter, Majse Vilstrup, Karolina Svärd, Keturah Cummings, Tania Gomes, Nina Jørgensen, Philipp Halfmann, Yotaro Niwa, Evil Twin, Aurore del Rio, Yannik Doernte, Sebastian Völkers, Nancy Hillen, Valerie Vaernewyck, Louisa Elderton, David Braithwaite, Werner Kernebeck, Isabel Cavenecia, Sarah Grether, Lady Gaby, Camila McHugh, Christine Schwarz, KAVALL, AYRIE, Daniel Kupferberg,Toby Saunders, Ingwa, UMLAUT</p>
-                </div>
-            </div>
-            <Artworks v-bind:artworks="shuffledArt2018" />
+            </a>
         </section>
         <div class="back two" :style="backcolor" />
         <div class="close" :style="closeBack" @click="close" :class="{ closeProjectsOn: this.$store.state.activeLink === 3 }">
@@ -51,20 +28,19 @@
 
 <script>
 import archive from "../data/archive.json";
-import Artworks from "./Artworks.vue";
+import eventsData from '../data/eventsData.json';
+
+import Event from './Event.vue';
 
 export default {
     name: "Archive",
     components: {
-        Artworks
+        Event
     },
     data() {
         return {
             backcolor: {
                 "background-color" : this.$store.getters.makeOpaque(true, 8)
-            },
-            backproject: {
-                "background-color" : this.$store.getters.makeOpaque(false, 9)
             },
             closeBack: {
                 "background-color" : this.$store.getters.makeOpaque(false, 8)
@@ -81,12 +57,17 @@ export default {
             },
             archive,
             shuffledArt2019: [],
-            shuffledArt2018: []
+            shuffledArt2018: [],
+            events: eventsData
         }
     },
     created() {
         this.shuffledArt2019 = this.shuffle(this.archive.cg2019);
         this.shuffledArt2018 = this.shuffle(this.archive.cg2018);
+        // this.events = this.eventsData;
+        // this.artworks = this.artworksData;
+        console.log("events: ", this.events)
+        console.log("artworks: ", this.artworks)
     },
     methods: {
         close() {
@@ -171,83 +152,8 @@ export default {
                 padding: 0 0 10px 3%; 
             }
         }
-        .project {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 20px 0;
-            @media (min-width: 500px) {
-                padding: 40px 0;
-            }
-            @media (min-width: 1000px) {
-                flex-direction: row;
-            }
-
-            div {
-                width: 90%;
-                margin: 0 5%;
-                display: inline-block;
-                @media (min-width: 500px) {
-                    width: 84%;
-                    margin: 0 8%;
-                }
-                @media (min-width: 1000px) {
-                    width: 40%;
-                    margin: 0 5%;
-                }
-            }
-
-            h2 {
-                font-family: $monofont;
-                padding: 0 0 0 10%;
-                opacity: 0.7;
-                font-size: 30px;
-                @media (min-width: 500px) {
-                   font-size: 40px; 
-                }
-            }
-
-            h3 {
-                font-weight: 600;
-                font-size: 11px;
-                padding: 0 0 0 20px;
-            }
-            h4 {
-                width: 80%;
-                padding: 0 10%;
-                font-weight: 300;
-                font-size: 15px;
-                opacity: 0.7;
-                @media (min-width: 500px) {
-                    font-size: 20px;
-                }
-
-            }
-            h5 {
-                font-weight: 400;
-                font-size: 14px;
-                text-align: right;
-                padding: 0 30% 0 0;
-                opacity: 0.5;
-            }
-            h6 {
-                font-weight: 600;
-                font-size: 14px;
-                width: 90%;
-                padding: 0 5%;
-                margin: 5px;
-            }
-            p {
-                width: 90%;
-                padding: 0 5%;
-                font-weight: 600;
-                font-size: 11px;
-                line-height: 1.5;
-                letter-spacing: 0.05em;
-            }
-        }
     }
+        
     .archiveOn .projects {
         top: 0;
         transition: top 1s ease-in-out
@@ -295,5 +201,31 @@ export default {
     .archiveOn .two {
         left: 0;
         transition: left 1s ease-in-out
+    }
+    .archive-link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background: rgba(255,255,255,0.3);
+        border: rgba(0,0,0,.5) 1px solid;
+        width: 90%;
+        margin: 40px 5% 20px;
+        border-radius: 20px;
+
+        p {
+            font-size: 17px;
+            line-height: 23px;
+            color: rgba(255,255,255,.6);
+            padding: 18px 5%;
+            width: 80%;
+        }
+
+        .right-arrow-svg {
+            width: 40px;
+            transform: rotate(90deg);
+            margin: 0 5%;
+        }
     }
 </style>

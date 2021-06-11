@@ -4,18 +4,10 @@
         :class="{aboutOn : this.$store.state.activeLink === 1}"
         :style="back"
         >
-            <h3>
-                This  project started in 2013 with a small group who met building installations in an old basement club in Berlin, year after year it evolved, developing into the unexplainable.
-            </h3>
-            <p>
-                ‘Globe Gallery’ was the initial name for a part of the site that could voice experiences through a site specific exhibition that expanded on the ground floor of the old sleeping quarters.
-            </p>
-            <p>
-                ‘Countdown Grabowsee’ is a phrase given to this project from the beginning, a countdown to look forward to.
-            </p>
-            <p class="botpad">
-                The site is situated in the middle of a derelict tuberculosis hospital called Heilstätte Grabowsee, 30km North of Berlin.
-            </p>
+            <h3>We host an annual non-profit collaborative summer residency on the grounds of Heilstätte Grabowsee,  which fosters artistic collaboration, through workshops, readings, performances, chance happenings, and communal living. We aim to cultivate a peaceful creative community, where participants are encouraged to experiment, collaborate and be inspired.</h3>
+            <p>The project started when a collective was formed in 2012 after meeting in a basement club in Berlin,  building odd installations. The first year was set as a casual event to prepare for a techno festival that did not happen, the next year we got some funding enabling the basic amenity structures to be built; kitchen, running water, compost toilet, pizza oven, treehouse,  then year after year it evolved, developing into a project unexplainable.</p>
+            <p>Community is fundamental to everything we do. Countdown Grabowsee is a slow growing community where kindness, tolerance and mutual support come first. We are not corporately or privately funded; the Countdown Grabowsee project runs through the hard work,  generosity and passion of everyone involved. We do not tolerate any violence or discrimation.</p>
+            <p class="botpad">We strive for an open and free environment where every human and non-human can co-exist.</p>
     </div>
 </template>
 
@@ -119,7 +111,7 @@ export default {
                 padding: 0 0 250px 0;
             }
             @media (min-width: 768px) {
-                padding: 0;
+                // padding: 0;
             }
         }
     }
@@ -128,7 +120,7 @@ export default {
         transition: top 1s ease-in-out;
         overflow-y: scroll;
         @media (min-width: 768px) {
-            overflow-y: hidden;
+            // overflow-y: hidden;
         }
     }
 </style>

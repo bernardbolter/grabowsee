@@ -4,7 +4,6 @@
         :class="{ contactOn: this.$store.state.activeLink === 4 }"
         :style="background"
     >
-        <h1 :style="line"><span>Philip Schrader</span> or <span>Alice Morey</span></h1>
         <h2>globe.gallery (at) gmx.de</h2>
     </div>
 </template>
@@ -103,7 +102,7 @@ export default {
     }
 
     h2 {
-        margin: 15px 0 0 20px;
+        margin: 0 0 0 10px;
         padding: 0;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
