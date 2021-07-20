@@ -3,7 +3,7 @@
         <section class="projects" :style="backcolor">
             <h1 :style="heading">Archive</h1>
             <Event v-for="event in events.events" :key="event.year" :event="event" />
-            <a class="archive-link" href="https://docs.google.com/forms/d/1tVd_yZ0VviDj5gFe3Zz3mhdvZdlXi6CAGiuTpV_tEm0" target="_blank">
+            <a class="archive-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeZZczRfcYtsORWB-BZ_VEV73GjGmoyvWSIYMg3q89Df5G6Aw/viewform" target="_blank">
                 <p>If you have participated in a previous residency and would like your work to be in the archive. Click this link and fill out the google form.</p> 
                 <div class="right-arrow-svg">
                     <svg viewBox="0 0 51 51">

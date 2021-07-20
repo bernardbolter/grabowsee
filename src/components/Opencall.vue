@@ -67,18 +67,21 @@
             
             <h2 class="headspace">Application:</h2>
             <p>Please fill in our participation form:</p>
-            <a 
-                href="https://docs.google.com/forms/d/1QSTywzDTgfOYm1_4uGRaTaF6_i1z3jSxdS1SmEFVC_o/" 
+            <!-- <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScDSVMDvgeC75pispz7bxp-UCMsXjJDE2zTN4Tx9IaBXc5EVQ/viewform" 
                 target="_blank" 
                 rel="noopener"
                 :style="linkStyles"
             >Artist/Creative</a>
             <a 
-                href="https://docs.google.com/forms/d/1lmXnFzOpOXUhSKolon5OpP0sJdl2qug3iSo38e_QIo4/" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScz2b4aLUg0U9BKD0UBDBVKgjMyh8h2FplGpOnzlcF0aoEOdg/viewform" 
                 target="_blank" 
                 rel="noopener"
                 :style="linkStyles"
-            >Musician/Sound Artist</a>
+            >Musician/Sound Artist</a> -->
+            <div class="open-call-closed-container">
+                <p>Applications are Closed.</p>
+            </div>
             <h2>Email us at globe.gallery@gmx.de with any questions.</h2>
             <h2 class="bold">Application deadline: 20th July 2021</h2>
             <p>Selected participants will be informed all by the end of July 2021</p>
@@ -123,18 +126,22 @@
 
             <h2 class="headspace">Anmeldung:</h2>
             <p>Bitte füllt unser Teilnahmeformular aus:</p>
-            <a 
-                href="https://docs.google.com/forms/d/1QSTywzDTgfOYm1_4uGRaTaF6_i1z3jSxdS1SmEFVC_o/" 
+            <!-- <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScDSVMDvgeC75pispz7bxp-UCMsXjJDE2zTN4Tx9IaBXc5EVQ/viewform" 
                 target="_blank" 
                 rel="noopener"
                 :style="linkStyles"
             >Artist/Creative</a>
             <a 
-                href="https://docs.google.com/forms/d/1lmXnFzOpOXUhSKolon5OpP0sJdl2qug3iSo38e_QIo4/" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScz2b4aLUg0U9BKD0UBDBVKgjMyh8h2FplGpOnzlcF0aoEOdg/viewform" 
                 target="_blank" 
                 rel="noopener"
                 :style="linkStyles"
-            >Musician/Sound Artist</a>
+            >Musician/Sound Artist</a> -->
+
+            <div class="open-call-closed-container">
+                <p>Bewerbungen sind geschlossen.</p>
+            </div>
 
             <h2>Kontakt: globe.gallery@gmx.de</h2>
             <h2 class="bold">Anmeldung bis 20. July 2021</h2>
@@ -427,6 +434,25 @@ export default {
             &:hover {
                 opacity: 1;
                 transition: opacity 0.5s ease-in-out;
+            }
+        }
+
+        .open-call-closed-container {
+            width: 100%;
+            padding: 0;
+            margin: 0 0 20px;
+            background: #d18e94;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(255,255,255,.2);
+
+            p {
+                color: rgba(255,255,255,.8);
+                font-size: 20px;
+                font-weight: bold;
+                padding: 40px 0;
+                margin: 0;
             }
         }
 
