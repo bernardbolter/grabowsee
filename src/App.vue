@@ -2,10 +2,12 @@
   <div id="app" class="app" :style="globalTextColor">
     <Nav />
     <Background />
-    <Countdown />
+    <!-- <Countdown /> -->
+    <Manifesto />
     <Home />
     <Archive />
-    <Opencall />
+    <!-- <Opencall /> -->
+    <Exhibition />
     <About />
     <Instagram />
     <Wave 
@@ -24,14 +26,15 @@
 <script>
 import Background from './components/Background.vue';
 import Home from './components/Home.vue';
-import Countdown from './components/Countdown.vue';
+// import Countdown from './components/Countdown.vue';
+import Manifesto from './components/Manifesto.vue';
 import Wave from './components/Wave.vue';
 
 import Nav from "./components/Nav.vue";
 import About from './components/About.vue';
 import Instagram from "./components/Instagram.vue"
-import Opencall from './components/Opencall.vue';
-// import Exhibition from "./components/Exhibition.vue"
+// import Opencall from './components/Opencall.vue';
+import Exhibition from "./components/Exhibition.vue"
 import Archive from "./components/Archive.vue";
 import Contact from "./components/Contact.vue";
 import Map from "./components/Map.vue";
@@ -66,11 +69,12 @@ export default {
   components: {
     Background,
     Home,
-    Countdown,
+    // Countdown,
+    Manifesto,
     Wave,
     Archive,
-    Opencall,
-    // Exhibition,
+    // Opencall,
+    Exhibition,
     About,
     Instagram,
     Contact,

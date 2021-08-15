@@ -5,19 +5,23 @@
         :style="background"
     >
         <section class="info">
-            <h1>‘POWER’</h1>
-            <h3>8th Edition</h3>
-            <!-- <h2>Countdown Grabowsee 21.-13. August 2020</h2>
-            <div class="dates">
+            <!-- <h1>‘MONEY’</h1> -->
+            <h3>‘MONEY’ | 9th Edition</h3>
+            <h2>Countdown Grabowsee</h2>
+            <h2>11.-22. August 2021</h2>
+            <!-- <div class="dates">
                 <p>Start 18:00 21.08</p>
                 <p>End 18:00 23.08</p>
             </div> -->
         </section>
-        <section class="inspiration">
+        <section class="title">
+            <img :src="require('../assets/money_flyer.jpg' )" alt="Residency Flyer 2021" />
+        </section>
+        <!-- <section class="inspiration">
             <h3>‘We live in Capitalism. Its power seems inescapable. So did the divine right of Kings. Any human power can be resisted and changed by human beings. Resistance and change often begin in art, and very often in our art, the art of words.”</h3>
             <p>Ursula le Guin</p>
-        </section> 
-        <section class="participants">
+        </section>  -->
+        <!-- <section class="participants">
             <h4>Participants:</h4>
             <div class="column">
                 <h5>Art</h5>
@@ -112,7 +116,7 @@
                 <p>Fabrix Art</p>
                 <p>Bernard Bolter</p>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="event">
             <h3>Exhibition</h3>
             <p>We welcome you to share with us a weekend full of creativity, installations, performances and sounds interweaving in and out of delicate structures that live in symbiosis with nature. You are invited to stay for the weekend, we share all responsibilities of cleaning and taking care of the site, Please bring your own food and drink, take your rubbish with you when you leave, camping equipment and look after the environment by leaving no trace.</p>
@@ -129,12 +133,12 @@
             <p>We understand that this is an unusual time for all of us and therefore we have to adjust to the development over the next weeks. We can’t foresee the situation at the end of August. So we still have to figure out how we can realise the event by taking the distance rules into account. There will be various locations on site with hand sanitizers, wear masks if necessary and we ask all those who enter to fill out a form with contact details. The whole event is private and will take place outside. We ask any one who is vulnerable or has been sick to think really carefully about entering the site.</p>
         </section> -->
         <section class="about">
-            <h3>About</h3>
-            <p>‘Countdown Grabowsee’ is a phrase given to this project from the beginning as a collective yearning for something more, an idea of a beginning , a starting point from where to end, an escape, a place of possibilities through building new relationships, new experiences and sharing your own. And without wanting to make you cringe, a countdown to look forward to.</p>
-            <p>‘Globe Gallery’ was the initial name for a part of the site that could voice these experiences through a site specific exhibition that expanded on the ground floor of the old sleeping quarters. House No.5. The corridor consists of over twenty-two rooms, broken windows, thick spider webs, dusty bricks, torn, crumbly wallpaper and the occasional artwork from past projects merging into the layers of history that unfold in this place.</p>
-            <p>The project started in 2013 with a small group who met building installations in an old basement club in Berlin. The first year was set as a casual ‘work camp’ to prepare a techno festival which did not happen, the next year it was EU funded, which enabled the basic amenity structures to be built; kitchen, running water, compost toilet, pizza oven, treehouse, then year after year it evolved and keeps developing into a project unexplainable.</p>
-            <p>The site is situated in the middle of a derelict tuberculosis hospital called Heilstätte Grabowsee, 30km North of Berlin. The first permanent building of the hospital was built in 1897 as a sanctuary for tuberculosis patients until after the Second World War, then it was used by the Red Army as a military hospital until 1995.</p>
-            <p>We host an annual non-profit collaborative residency which fosters artistic collaboration, through workshops, readings, performances, chance happenings, and communal living.We aim to cultivate a peaceful community which entails co-creation, camping and living amongst idyllic natural landscapes.</p>
+            <h3>About:</h3>
+            <p>We host an annual non-profit collaborative summer residency on the grounds of Heilstätte Grabowsee, which fosters artistic collaboration, through workshops, readings, performances, chance happenings, and communal living. We aim to cultivate a peaceful creative community, where participants are encouraged to experiment, collaborate and be inspired.</p>
+            <p>The project started when a collective was formed in 2012 after meeting in a basement club in Berlin, building odd installations. The first year was set as a casual event to prepare for a techno festival that did not happen, the next year we got some funding enabling the basic amenity structures to be built; kitchen, running water, compost toilet, pizza oven, treehouse, then year after year it evolved, developing into a project unexplainable.</p>
+            <h3>Community:</h3>
+            <p>Community is fundamental to everything we do. Countdown Grabowsee is a slow growing community where kindness, tolerance and mutual support come first. We are not corporately or privately funded; the Countdown Grabowsee project runs through the hard work, generosity and passion of everyone involved. We do not tolerate any violence or discrimation.</p>
+            <p>We strive for an open and free environment where every human and non-human can co-exist.</p>
         </section>
     </div>
 </template>
@@ -271,6 +275,43 @@ export default {
             text-align: right;
             @media (min-width: 1400px) {
                 font-size: 17px;
+            }
+        }
+    }
+    .title {
+        width: 80%;
+        margin: 10px 10% 0 10%;
+        @media (min-width: 500px) {
+            margin: 50px 10% 0 10%;
+        }
+
+                img {
+            width: 100%;
+            margin: 0;
+
+            @media (min-width: 500px) {
+                width: 90%;
+                margin: 0 5%;
+            }
+
+            @media (min-width: 650px) {
+                width: 80%;
+                margin: 0 10%;
+            }
+
+            @media (min-width: 800px) {
+                width: 70%;
+                margin: 0 15%;
+            }
+
+            @media (min-width: 1000px) {
+                width: 60%;
+                margin: 0 20%;
+            }
+
+            @media (min-width: 1200px) {
+                width: 50%;
+                margin: 0 25%;
             }
         }
     }

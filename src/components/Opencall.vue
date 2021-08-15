@@ -79,9 +79,11 @@
                 rel="noopener"
                 :style="linkStyles"
             >Musician/Sound Artist</a> -->
+
             <div class="open-call-closed-container">
                 <p>Applications are Closed.</p>
             </div>
+
             <h2>Email us at globe.gallery@gmx.de with any questions.</h2>
             <h2 class="bold">Application deadline: 20th July 2021</h2>
             <p>Selected participants will be informed all by the end of July 2021</p>
