@@ -11,14 +11,14 @@
                 <p>Exhibition weekend:</p>
             </div>
             <div class="right">
-                <h2>Application deadline: 20th July 2021</h2>
-                <p>11 - 22nd August 2021</p>
-                <p>20 - 22rd August 2021</p>
+                <h2>Application deadline: 1st July 2021</h2>
+                <p>10 - 21st August 2022</p>
+                <p>19 - 21st August 2022</p>
             </div>
         </section>
 
         <section class="title">
-            <h5>We welcome project and artist proposals for this 9th edition of Countdown Grabowsee.</h5>
+            <h5>We welcome project and artist proposals for this 10th edition of Countdown Grabowsee.</h5>
             <img :src="require('../assets/money_flyer.jpg' )" alt="Residency Flyer 2021" />
         </section>
         <!-- <section class="inspiration">

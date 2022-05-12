@@ -11,7 +11,7 @@ const store = new Vuex.Store({
     activeLink: 0,
     links: [
         { name: "about", id: 1, active: false },
-        { name: "exhibition", id: 2, active: false },
+        { name: "open call", id: 2, active: false },
         { name: "archive", id: 3, active: false },
         { name: "contact", id: 4, active: false }
     ]

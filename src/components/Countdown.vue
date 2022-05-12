@@ -33,7 +33,7 @@ export default {
     data() {
         return {
             now: new Date(),
-            date: Math.trunc(new Date(2021, 7, 11, 18) / 1000),
+            date: Math.trunc(new Date(2022, 8, 10, 18) / 1000),
             color: {
                 "color" : this.$store.getters.makeOpaque(false, 9)
             }

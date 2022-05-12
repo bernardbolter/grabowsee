@@ -5,7 +5,7 @@
         <h1 :style="(this.theWidth > 500) ? graOffset : graOffsetSmall">GRA</h1>
         <h1 :style="(this.theWidth > 500) ? bowOffset : bowOffsetSmall">BOW</h1>
         <h1 :style="(this.theWidth > 500) ? seeOffset : seeOffsetSmall">SEE</h1>
-        <h1 :style="(this.theWidth > 500) ? thOffset : thOffsetSmall"><span class="power">9th</span></h1>
+        <h1 :style="(this.theWidth > 500) ? thOffset : thOffsetSmall"><span class="power">10th</span></h1>
         <h1 :style="(this.theWidth > 500) ? editionOffset : editionOffsetSmall"><span class="power">edition</span></h1>
     </div>
 </template>
