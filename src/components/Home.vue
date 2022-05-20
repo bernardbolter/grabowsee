@@ -7,6 +7,10 @@
         <h1 :style="(this.theWidth > 500) ? seeOffset : seeOffsetSmall">SEE</h1>
         <h1 :style="(this.theWidth > 500) ? thOffset : thOffsetSmall"><span class="power">10th</span></h1>
         <h1 :style="(this.theWidth > 500) ? editionOffset : editionOffsetSmall"><span class="power">edition</span></h1>
+
+        <div class="inspiration">
+            <h2><span  class="lead">Inertia:</span> “a property of matter by which it continues in its existing state of rest or uniform motion in a straight line, unless that state is changed by an external force.”</h2>
+        </div>
     </div>
 </template>
 
@@ -201,11 +205,20 @@ export default {
         }
         .inspiration {
             width: 90%;
-            margin: 0 5% 0 5%;
+            margin: 225px 5% 0 5%;
+
             @media (min-width: 500px) {
-                margin: 10px 5% 0 5%;
+                width: 70%;
+                margin: 400px 15% 0 15%;
             }
+
+            .lead {
+                font-size: 35px;
+                font-weight: 900;
+            }
+
             h2 {
+                color: rgba(255,255,255,.7);
                 font-size: 15px;
                 font-weight: 600;
                 text-align: justify;

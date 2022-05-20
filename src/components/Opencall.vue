@@ -19,12 +19,24 @@
 
         <section class="title">
             <h5>We welcome project and artist proposals for this 10th edition of Countdown Grabowsee.</h5>
-            <img :src="require('../assets/money_flyer.jpg' )" alt="Residency Flyer 2021" />
+
+            <!-- <video autoplay="autoplay" class="video">
+                <source :src="require('../assets/inertia.mp4')" type="video/mp4">
+            </video> -->
+            <img :src="require('../assets/inertia.gif' )" alt="Residency Flyer 2022" />
         </section>
         <!-- <section class="inspiration">
             <h3>‘We live in Capitalism. Its power seems inescapable. So did the divine right of Kings. Any human power can be resisted and changed by human beings. Resistance and change often begin in art, and very often in our art, the art of words.”</h3>
             <p>Ursula le Guin</p>
         </section>  -->
+
+        <section class="application">
+            <h3><b>Inertia:</b> “a property of matter by which it continues in its existing state of rest or uniform motion in a straight line, unless that state is changed by an external force.”</h3>
+            <p>When people say something ‘has always been this way’ they’re usually justifying not changing something that probably really needs changing. Whether you call it cultural hegemony, social reproduction or most commonly ‘status quo’, these social tendencies usually work in the same way; a dominating system of norms which reproduce themselves and inherently exclude anything that doesn't conform. From this position the prospect of bringing about meaningful opposition and eventual change is challenging (although certainly not impossible).</p>
+            <p>The scientific concept of inertia, however, is describing something a little different. Although it describes a continuing state of being or stasis, it does not hold the implication that this stasis is necessarily being reproduced and self-justified. Instead, It more simply implies a repetition or resting state. In scientific terms, Inertia can furthermore be very clearly be changed or altered by an external force.</p>
+            <p>For Countdown Grabowsee 2022, as artists, we want to specifically ask: what happens when we think about the concept of inertia and apply it to what we see around us? Can this notion of inertia provide us with a new lens or framework to study how repetition and stasis can be both transformed and maintained? What role can art play in understanding, challenging or even transforming inertia? At the same time, what role can art play in contributing towards inertia? And finally, when should we drive change forward and when can we utilse a resting state?</p>
+        </section>
+
         <section class="application">
             <h1>EN</h1>
             <h2>About:</h2>
@@ -38,14 +50,18 @@
             <h2>Art:</h2>
             <p>We welcome artists and creatives to join us and create a site-specific work. We encourage the work to be in response to the specific nature of the place, your experiences and the working title ‘Money’.  You are welcome to use designated rooms as temporary studios during your time spent on site and we aim to turn the whole area into a large scale exhibition, full of life by the end of the residency. We offer materials from the ‘Fundus’ for you to play with, this includes fabrics, found objects, bits of furniture, wood and random bits and bobs. We provide basic working tools like hammers, drill, saws, screws and there is limited access to electricity. Specific materials and tools please bring for yourself.</p>
 
+            <h2>"INERTIA"</h2>
+            <p>You are welcome to use designated rooms as temporary studios during your time spent on site and we aim to turn the whole area into a large scale exhibition, full of life by the end of the residency. We offer materials from the ‘Fundus’ for you to play with, this includes fabrics, found objects, bits of furniture, wood and random bits and bobs. We provide basic working tools like hammers, drill, saws, screws and there is limited access to electricity. Specific materials and tools please bring for yourself.</p>
+
             <h2>Sound and music:</h2>
             <p>We also welcome sound artists and musicians to the project. We are open to all kinds of approaches, acoustic or amplified, analog or digital, sound installation or live performance. The work developed at Grabowsee should in some way deal with the theme of the year.  Like the artists , you are also welcome to use designated rooms as temporary studios and we have lockable ones available.</p>
-            <p>If you work with amplified sound, please note that you’ll have to bring your own equipment and sound system for the working week. Electricity is limited in areas of the site , so please inform us of how much you need in advance.  For live performances, there will be one PA for the final exhibition week-end.</p>
+            <p>If you work with amplified sound, please note that you’ll have to bring your own equipment and sound system for the working week. <b>Electricity is limited in areas of the site , so please inform us of how much you need in advance.</b> For live performances, there will be one PA for the final exhibition week-end.</p>
             
-            <h2>Group Exhibition ‘The Bath House’:</h2>
+            <!-- <h2>Group Exhibition ‘The Bath House’:</h2>
             <p>This year we are focusing on a group exhibition with ALL the participants. This will be held in one of the big spaces, the old washing quarters. ‘The Bath House’ will be an opportunity to bring all the artworks made during the residency together in an intimate setting and pull in the focus of collaboration.</p>
             <p>Please have a think when you apply what kind of work you would contribute to this exhibition and we expect you to work on it during the residency.</p>
-            
+             -->
+
             <h2>Workshops & active participation:</h2>
             <p>We would like each participant to think of an activity, workshop, game, task that they can bring during the time spent there. This way we can fill up the schedule with sharing skills, conversation and experience. Examples from previous years include; ceramics, printing techniques, voice training, yoga, bookbinding, collage, fermenting.</p>
             
@@ -67,26 +83,26 @@
             
             <h2 class="headspace">Application:</h2>
             <p>Please fill in our participation form:</p>
-            <!-- <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLScDSVMDvgeC75pispz7bxp-UCMsXjJDE2zTN4Tx9IaBXc5EVQ/viewform" 
+            <a 
+                href="https://forms.gle/7AZLAwQZRtfwCfZC8" 
                 target="_blank" 
                 rel="noopener"
                 :style="linkStyles"
             >Artist/Creative</a>
             <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLScz2b4aLUg0U9BKD0UBDBVKgjMyh8h2FplGpOnzlcF0aoEOdg/viewform" 
+                href="https://forms.gle/uTEsBMKzwsKJSSvJ8" 
                 target="_blank" 
                 rel="noopener"
                 :style="linkStyles"
-            >Musician/Sound Artist</a> -->
+            >Musician/Sound Artist</a>
 
-            <div class="open-call-closed-container">
+            <!-- <div class="open-call-closed-container">
                 <p>Applications are Closed.</p>
-            </div>
+            </div> -->
 
             <h2>Email us at globe.gallery@gmx.de with any questions.</h2>
-            <h2 class="bold">Application deadline: 20th July 2021</h2>
-            <p>Selected participants will be informed all by the end of July 2021</p>
+            <h2 class="bold">Application deadline: 1st July 2022</h2>
+            <p>Selected participants will be informed all by the end of July 2022</p>
             <h2 class="bold">We look forward to your proposals and welcome you to this year's edition!</h2>
             
             <div class="line" />
@@ -97,7 +113,7 @@
             <p>Der Ursprung der Globe Gallery liegt im Jahr 2012. Zu dieser Zeit veranstalteten wir Parties und Happenings in diversen Berliner Clubs. In den letzten Jahren hat sich unser Fokus von der reinen Partyveranstaltung mehr in Richtung einer dauerhaften, nachhaltigen Veranstaltung auf dem Gelände der Heilstätte Grabowsee verschoben. Dabei ist eines unserer Ziele zur Entwicklung des Geländes beizutragen und über die Jahre entwickelte sich die Veranstaltung zu einem Projekt, dass letztendlich nur durch eigenes Erleben erfahrbar wird.</p>
             
             <h2>Gemeinschaft:</h2>
-            <p>Gemeinschaft ist für uns und unsere Veranstaltung eine fundamentale Basis. Dabei ist uns der Austausch zwischen unterschiedlichen Menschen, Meinungen, Ansichten und Weltanschauungen enorm wichtig. Unser Projekt wird weder öffentlich noch privat gefördert, es entsteht alleine durch das Engagement der Veranstalter_innen. Uns ist wichtig, dass die Veranstaltung für jeden ohne Druck und Zwang durchgeführt wird. Physische oder psychische Gewalt und Intoleranz dulden wir nicht.</p>
+            <p><b>Gemeinschaft ist für uns und unsere Veranstaltung eine fundamentale Basis. Dabei ist uns der Austausch zwischen unterschiedlichen Menschen, Meinungen, Ansichten und Weltanschauungen enorm wichtig. Unser Projekt wird weder öffentlich noch privat gefördert, es entsteht alleine durch das Engagement der Veranstalter_innen. Uns ist wichtig, dass die Veranstaltung für jeden ohne Druck und Zwang durchgeführt wird. Physische oder psychische Gewalt und Intoleranz dulden wir nicht.</b></p>
 
             <h2>Kunst:</h2>
             <p>Wir rufen Künstler_innen und Musiker_innen bzw. Alle kreativen Menschen auf, durch Ihre Arbeit auf das Thema und das Gelände Bezug zu nehmen. Dabei gilt es die besonderen Gegebenheiten der Natur, der Gebäude und der Einrichtungen des Geländes zu beachten. Das Thema der Globe Gallery 2021 lautet “Money”. Für die Arbeiten können temporär verschiedene Räume und Plätze des Geländes verwendet werden. Die Arbeiten werden am Ende der Globe Gallery Teil einer größeren Ausstellung auf dem Gelände werden. Auf dem Gelände existiert eine große Auswahl von Materialien wie Stoffe, Fundstücke, Einrichtungsgegenstände, Holz und Nippes. Darüber hinaus haben wir ein begrenzte Anzahl von Werkzeug wie Bohrer, Hämmer, Sägen, Schaufeln, usw….Wenn Ihr spezielle Werkzeuge und Materialien benötigt, oder Werkzeuge bzw. Materialien nicht teilen möchtet, dann im Zweifel selbst mitnehmen.</p>
@@ -105,8 +121,8 @@
             <h2>Sound und Musik:</h2>
             <p>Auch dieses Jahr rufen wir wieder speziell Musiker_innen auf sich an der Globe Gallery zu beteiligen, eine Einschränkung auf eine bestimmte Musik oder Stilrichtung existiert nicht. Falls Ihr mit Verstärkern arbeiten möchtet, dann bringt bitte Euer eigenes Equipment mit, von Veranstaltungsseite haben wir lediglich eine kleine PA für Live Auftritte während der Veranstaltung. Zum Arbeiten gibt es Räume, diese sind notfalls auch abschließbar. Allerdings gibt es nicht an jedem Ort des Geländes einen Stromanschluss</p>
             
-            <h2>Gruppenausstellung ‘The Bath House’:</h2>
-            <p>Dieses Jahr möchten wir zusätzlich eine Gruppenausstellung mit allen Teilnehmer_innen realisieren. Diese findet im sogenannten Badehaus statt und soll dem künstlerischen Austausch unter den Teilnehmer_innen dienen.</p>
+            <!-- <h2>Gruppenausstellung ‘The Bath House’:</h2>
+            <p>Dieses Jahr möchten wir zusätzlich eine Gruppenausstellung mit allen Teilnehmer_innen realisieren. Diese findet im sogenannten Badehaus statt und soll dem künstlerischen Austausch unter den Teilnehmer_innen dienen.</p> -->
 
             <h2>Workshops:</h2>
             <p>Globe Gallery ist nicht nur eine Veranstaltung, die “passiv” erlebt werden soll. Die Veranstaltung lebt hauptsächlich durch die aktive Teilnahme der einzelnen Menschen. Wir begrüßen es daher ausdrücklich, wenn Ihr Workshops, Lesungen, Performances während der Globe Gallery veranstalten möchtet.</p>
@@ -128,22 +144,23 @@
 
             <h2 class="headspace">Anmeldung:</h2>
             <p>Bitte füllt unser Teilnahmeformular aus:</p>
-            <!-- <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLScDSVMDvgeC75pispz7bxp-UCMsXjJDE2zTN4Tx9IaBXc5EVQ/viewform" 
+
+            <a 
+                href="https://forms.gle/7AZLAwQZRtfwCfZC8" 
                 target="_blank" 
                 rel="noopener"
                 :style="linkStyles"
             >Artist/Creative</a>
             <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLScz2b4aLUg0U9BKD0UBDBVKgjMyh8h2FplGpOnzlcF0aoEOdg/viewform" 
+                href="https://forms.gle/uTEsBMKzwsKJSSvJ8" 
                 target="_blank" 
                 rel="noopener"
                 :style="linkStyles"
-            >Musician/Sound Artist</a> -->
+            >Musician/Sound Artist</a>
 
-            <div class="open-call-closed-container">
+            <!-- <div class="open-call-closed-container">
                 <p>Bewerbungen sind geschlossen.</p>
-            </div>
+            </div> -->
 
             <h2>Kontakt: globe.gallery@gmx.de</h2>
             <h2 class="bold">Anmeldung bis 20. July 2021</h2>
@@ -335,6 +352,11 @@ export default {
                 width: 50%;
                 margin: 0 25%;
             }
+        }
+
+        .video {
+            width: 100%;
+            margin: 0;
         }
     }
     .inspiration {

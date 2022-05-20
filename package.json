@@ -10,6 +10,7 @@
   "dependencies": {
     "@mapbox/mapbox-gl-geocoder": "^4.5.1",
     "@studiometa/vue-mapbox-gl": "^1.2.1",
+    "caniuse-lite": "^1.0.30001341",
     "core-js": "^3.6.4",
     "jump.js": "^1.0.2",
     "mapbox-gl": "^1.10.0",
