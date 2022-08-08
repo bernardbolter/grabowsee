@@ -48,10 +48,7 @@
             <p>We strive for an open and free environment where every human and non-human can co-exist.</p>
 
             <h2>Art:</h2>
-            <p>We welcome artists and creatives to join us and create a site-specific work. We encourage the work to be in response to the specific nature of the place, your experiences and the working title ‘Money’.  You are welcome to use designated rooms as temporary studios during your time spent on site and we aim to turn the whole area into a large scale exhibition, full of life by the end of the residency. We offer materials from the ‘Fundus’ for you to play with, this includes fabrics, found objects, bits of furniture, wood and random bits and bobs. We provide basic working tools like hammers, drill, saws, screws and there is limited access to electricity. Specific materials and tools please bring for yourself.</p>
-
-            <h2>"INERTIA"</h2>
-            <p>You are welcome to use designated rooms as temporary studios during your time spent on site and we aim to turn the whole area into a large scale exhibition, full of life by the end of the residency. We offer materials from the ‘Fundus’ for you to play with, this includes fabrics, found objects, bits of furniture, wood and random bits and bobs. We provide basic working tools like hammers, drill, saws, screws and there is limited access to electricity. Specific materials and tools please bring for yourself.</p>
+            <p>We welcome artists and creatives to join us and create a site-specific work. We encourage the work to be in response to the specific nature of the place, your experiences and the working title "Inertia".  You are welcome to use designated rooms as temporary studios during your time spent on site and we aim to turn the whole area into a large scale exhibition, full of life by the end of the residency. We offer materials from the ‘Fundus’ for you to play with, this includes fabrics, found objects, bits of furniture, wood and random bits and bobs. We provide basic working tools like hammers, drill, saws, screws and there is limited access to electricity. Specific materials and tools please bring for yourself.</p>
 
             <h2>Sound and music:</h2>
             <p>We also welcome sound artists and musicians to the project. We are open to all kinds of approaches, acoustic or amplified, analog or digital, sound installation or live performance. The work developed at Grabowsee should in some way deal with the theme of the year.  Like the artists , you are also welcome to use designated rooms as temporary studios and we have lockable ones available.</p>
@@ -66,7 +63,7 @@
             <p>We would like each participant to think of an activity, workshop, game, task that they can bring during the time spent there. This way we can fill up the schedule with sharing skills, conversation and experience. Examples from previous years include; ceramics, printing techniques, voice training, yoga, bookbinding, collage, fermenting.</p>
             
             <h2>Site Work:</h2>
-            <p>This year we will not be focusing on the traditional site work activities, but rather use this designated time each day to work towards the end event and organisation of the group exhibition ‘The Bath House’.</p>
+            <p>This year we will not be focusing on the traditional site work activities, but rather use this designated time each day to work towards the end event and organisation.</p>
             <p>For all the newcomers, two hours a day was designated to help towards the maintenance of the buildings, the continuation of the project and team building.</p>
             
             <h2>Costs:</h2>
@@ -116,7 +113,7 @@
             <p><b>Gemeinschaft ist für uns und unsere Veranstaltung eine fundamentale Basis. Dabei ist uns der Austausch zwischen unterschiedlichen Menschen, Meinungen, Ansichten und Weltanschauungen enorm wichtig. Unser Projekt wird weder öffentlich noch privat gefördert, es entsteht alleine durch das Engagement der Veranstalter_innen. Uns ist wichtig, dass die Veranstaltung für jeden ohne Druck und Zwang durchgeführt wird. Physische oder psychische Gewalt und Intoleranz dulden wir nicht.</b></p>
 
             <h2>Kunst:</h2>
-            <p>Wir rufen Künstler_innen und Musiker_innen bzw. Alle kreativen Menschen auf, durch Ihre Arbeit auf das Thema und das Gelände Bezug zu nehmen. Dabei gilt es die besonderen Gegebenheiten der Natur, der Gebäude und der Einrichtungen des Geländes zu beachten. Das Thema der Globe Gallery 2021 lautet “Money”. Für die Arbeiten können temporär verschiedene Räume und Plätze des Geländes verwendet werden. Die Arbeiten werden am Ende der Globe Gallery Teil einer größeren Ausstellung auf dem Gelände werden. Auf dem Gelände existiert eine große Auswahl von Materialien wie Stoffe, Fundstücke, Einrichtungsgegenstände, Holz und Nippes. Darüber hinaus haben wir ein begrenzte Anzahl von Werkzeug wie Bohrer, Hämmer, Sägen, Schaufeln, usw….Wenn Ihr spezielle Werkzeuge und Materialien benötigt, oder Werkzeuge bzw. Materialien nicht teilen möchtet, dann im Zweifel selbst mitnehmen.</p>
+            <p>Wir rufen Künstler_innen und Musiker_innen bzw. Alle kreativen Menschen auf, durch Ihre Arbeit auf das Thema und das Gelände Bezug zu nehmen. Dabei gilt es die besonderen Gegebenheiten der Natur, der Gebäude und der Einrichtungen des Geländes zu beachten. Das Thema der Globe Gallery 2021 lautet “Inertia”. Für die Arbeiten können temporär verschiedene Räume und Plätze des Geländes verwendet werden. Die Arbeiten werden am Ende der Globe Gallery Teil einer größeren Ausstellung auf dem Gelände werden. Auf dem Gelände existiert eine große Auswahl von Materialien wie Stoffe, Fundstücke, Einrichtungsgegenstände, Holz und Nippes. Darüber hinaus haben wir ein begrenzte Anzahl von Werkzeug wie Bohrer, Hämmer, Sägen, Schaufeln, usw….Wenn Ihr spezielle Werkzeuge und Materialien benötigt, oder Werkzeuge bzw. Materialien nicht teilen möchtet, dann im Zweifel selbst mitnehmen.</p>
 
             <h2>Sound und Musik:</h2>
             <p>Auch dieses Jahr rufen wir wieder speziell Musiker_innen auf sich an der Globe Gallery zu beteiligen, eine Einschränkung auf eine bestimmte Musik oder Stilrichtung existiert nicht. Falls Ihr mit Verstärkern arbeiten möchtet, dann bringt bitte Euer eigenes Equipment mit, von Veranstaltungsseite haben wir lediglich eine kleine PA für Live Auftritte während der Veranstaltung. Zum Arbeiten gibt es Räume, diese sind notfalls auch abschließbar. Allerdings gibt es nicht an jedem Ort des Geländes einen Stromanschluss</p>
@@ -163,7 +160,7 @@
             </div> -->
 
             <h2>Kontakt: globe.gallery@gmx.de</h2>
-            <h2 class="bold">Anmeldung bis 20. July 2021</h2>
+            <h2 class="bold">Anmeldung bis 1. July 2022</h2>
             <p>Zu oder Absagen werden wir bis Ende July versenden</p>
             <h2 class="bold">Wir freuen uns auf Euch und Eure Beiträge!</h2>
          </section>

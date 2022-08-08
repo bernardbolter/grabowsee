@@ -68,6 +68,7 @@ export default {
         // this.artworks = this.artworksData;
         console.log("events: ", this.events)
         console.log("artworks: ", this.artworks)
+        console.log("archive: ", this.archive)
     },
     methods: {
         close() {

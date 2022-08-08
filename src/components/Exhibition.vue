@@ -6,117 +6,137 @@
     >
         <section class="info">
             <!-- <h1>‘MONEY’</h1> -->
-            <h3>‘MONEY’ | 9th Edition</h3>
+            <h3><b>"INERTIA"</b> | 10th Edition</h3>
             <h2>Countdown Grabowsee</h2>
-            <h2>11.-22. August 2021</h2>
+            <h2>10.-24. August 2022</h2>
             <!-- <div class="dates">
                 <p>Start 18:00 21.08</p>
                 <p>End 18:00 23.08</p>
             </div> -->
         </section>
         <section class="title">
-            <img :src="require('../assets/money_flyer.jpg' )" alt="Residency Flyer 2021" />
+            <img :src="require('../assets/inertia.gif' )" alt="Residency Flyer 2022" />
         </section>
-        <!-- <section class="inspiration">
-            <h3>‘We live in Capitalism. Its power seems inescapable. So did the divine right of Kings. Any human power can be resisted and changed by human beings. Resistance and change often begin in art, and very often in our art, the art of words.”</h3>
-            <p>Ursula le Guin</p>
-        </section>  -->
-        <!-- <section class="participants">
+        <section class="inspiration">
+            <h3>“a property of matter by which it continues in its existing state of rest or uniform motion in a straight line, unless that state is changed by an external force.”</h3>
+            <h5>When people say something ‘has always been this way’ they’re usually justifying not changing something that probably really needs changing. Whether you call it cultural hegemony, social reproduction or most commonly ‘status quo’, these social tendencies usually work in the same way; a dominating system of norms which reproduce themselves and inherently exclude anything that doesn't conform. From this position the prospect of bringing about meaningful opposition and eventual change is challenging (although certainly not impossible).</h5>
+            <h5>The scientific concept of inertia, however, is describing something a little different. Although it describes a continuing state of being or stasis, it does not hold the implication that this stasis is necessarily being reproduced and self-justified. Instead, It more simply implies a repetition or resting state. In scientific terms, Inertia can furthermore be very clearly be changed or altered by an external force.</h5>
+            <h5>For Countdown Grabowsee 2022, as artists, we want to specifically ask: what happens when we think about the concept of inertia and apply it to what we see around us? Can this notion of inertia provide us with a new lens or framework to study how repetition and stasis can be both transformed and maintained? What role can art play in understanding, challenging or even transforming inertia? At the same time, what role can art play in contributing towards inertia? And finally, when should we drive change forward and when can we utilse a resting state?</h5>
+        </section> 
+        <section class="participants">
             <h4>Participants:</h4>
             <div class="column">
                 <h5>Art</h5>
-                <p>Sara Ezzell</p>
-                <p>Pernille Rosendahl</p> 				
-                <p>Nuno Ferreira</p>				
-                <p>Liina Nillson</p>
-                <p>Beatrice Baumgartner</p>
-                <p>Sally Evans</p> 
-                <p>Frank Merkx</p> 				
-                <p>Tabea Briggs</p> 
-                <p>Elvin Brandhi</p> 
+                <p>Sabiwa</p>
+                <p>Alkmini</p> 				
+                <p>Alfie Sellers</p>				
+                <p>Julie Teuber</p>
+                <p>Aja Jaques</p>
+                <p>Susanna Oteiza</p> 
+                <p>Maria Secio</p> 				
+                <p>Rob Blake</p> 
+                <p>Iolo Walker</p> 
+                <p>Imke Rust</p> 
+                <p>Ben Dressel</p> 
+                <p>Anna Vlassova Longworth</p> 
+                <p>Aisling Marnane</p>			
+                <p>Nishmi</p> 			
+                <p>Magdalena Zagorski</p> 			
+                <p>Charlie Hawksfield</p> 
+                <p>Octavio Garabello</p> 				
+                <p>Ricarda Bochat</p> 		
                 <p>Becky Buchanan</p> 
-                <p>Karolina Svärd</p> 
-                <p>Therese Resi</p> 
-                <p>Lucas Lacerda Góes</p>			
-                <p>Daniel Weyand</p> 			
-                <p>Simone Kesting</p> 			
-                <p>Dietrich Meyer</p> 
-                <p>Sarah Friend</p> 				
-                <p>Gabriela Matuszewska</p> 		
-                <p>Charlotte Kleinschmidt</p> 
-                <p>Ole Zerndt</p> 
-                <p>Paloma Schnitzer</p> 			
-                <p>Liav Gabay</p> 				
-                <p>Dareos Khalili</p> 			
-                <p>Elisabeth Wilke</p> 
-                <p>Isabel Cavenecia</p> 
-                <p>Aja Jacques</p>				
-                <p>Caro Ley</p> 				
-                <p>Ingrid Blix</p> 				
-                <p>Sam Gora</p> 			
+                <p>Daniel Brennan</p> 
+                <p>Nadia D’Allesio</p> 			
+                <p>Max Lunn</p> 				
+                <p>Ivana Kekic</p> 			
+                <p>Ana Eloisa Sommer-Madison</p> 
+                <p>Mila Startosta</p> 
+                <p>Lale Willan</p>				
+                <p>Jessica Garfield</p> 				
+                <p>Emily Morey</p> 				
+                <p>Sam Potter</p> 			
                 <p>Allistair Walter</p> 		
-                <p>Bernard Bolter</p>
-                <p>Dilery Alejandra Sanchez Ortiz</p> 	
-                <p>P.A. Hülsenbeck</p> 
-                <p>Maria Sécio</p> 				
-                <p>Thomas Desloges</p> 			
-                <p>Merve Namli</p>				
-                <p>Pippa Brabyn</p> 				
-                <p>Yan Gi Cheng</p> 			
-                <p>Alkmini Gkousiari</p> 			
-                <p>Aurelia Van Kempen</p>
-                <p>Bridget Hines</p> 				
-                <p>Alex Porter</p> 
-                <p>Elliot Nicol</p> 
-                <p>Anna Vlassova-Longworth</p> 		
-                <p>Mikolaj Rogowski</p> 			
-                <p>Kito Colchester</p> 
-                <p>Bella Hope</p> 
-                <p>Julian Simon</p> 				
-                <p>Max Lunn</p> 			
-                <p>Tine Nedbo</p>				
-                <p>Maitane Midby </p>
-                <p>Toby Saunders</p> 
-                <p>Lale Willan</p> 				
-                <p>Maria Leibnitz</p>			
-                <p>Rob Blake</p>
-                <p>Gustav Kleinschmidt</p>	
-                <p>Dan Glass</p>	
-                <p>Magdalena Zagorski</p>	
-                <p>Maxim Schmidthals</p>
+                <p>Clara Ewald</p>
+                <p>Tukalo Olena</p> 	
+                <p>Miguel Soler Montellano</p> 
+                <p>Anastasia Sukhareva-Morozova</p> 				
+                <p>Lise Wilke</p> 			
+                <p>Maitane Midby</p>				
+                <p>Jo Harvey</p> 				
+                <p>Anne Marina Fiedler</p> 			
+                <p>Nkech Kwokolo</p> 			
+                <p>Tine Nedbo</p>
+                <p>Mia Carvalho</p> 				
+                <p>Alice Morey</p> 
+                <p>Felix Waldherr</p> 
+                <p>Barbara Oliveira</p> 		
+                <p>Marina Detsch</p> 			
+                <p>Bernart John Bolter IV</p> 
+                <p>Inga Kat Coleman</p> 
+                <p>Milena Leszkowicz</p> 				
+                <p>Filipe Pirl</p> 			
+                <p>Maximilian Küster</p>				
+                <p>Gaby Bila-Guenther</p>
+                <p>Zwei</p> 
+                <p>Karolina Svärd</p> 				
+                <p>Franziska Doffin</p>			
+                <p>Monique Ulrich</p>
+                <p>Jack Dove</p>	
+                <p>David Braithwaite</p>	
+                <p>Werner Kernebeck</p>	
+                <p>Charlotte Ruth Kleinschmidt</p>
+                <p>Klara Emilie Kleinschmidt</p>
+                <p>Philipp Schrader</p>
+                <p>Kito Kolchester</p>
+                <p>Bella Hope</p>
+                <p>Zu Kalinowska</p>
+                <p>Aurelia van Kempen</p>
+                <p>Lina Nilsson</p>
+                <p>Mario</p>
+                <p>Ben Whitehill</p>
+                <p>Hannah Turner-Duffin</p>
             </div>
             <div class="column">
                 <h5>Sound</h5>
-                <p>Susanna Risberg</p>
+                <p>Laure Boer</p>
+                <p>Darya Zvezdina</p>
+                <p>Andrey Guryanov</p> 			
+                <p>Leander Jones</p>
+                <p>Juliana Napier</p> 
+                <p>Jele Mensen</p> 
+                <p>Rosa Landers</p> 
+                <p>Andreas Werner</p> 
+                <p>Hendrik van Elst</p> 
+                <p>Diane Barbe</p> 
+                <p>Andreas Heib</p> 
+                <p>Nat Fowler</p> 
+                <p>Nicolas Saalfeld</p> 
+                <p>Janberk Turan</p> 
+                <p>Janek van Laak</p> 
+                <p>Jonathan Batomene Braun</p> 
+                <p>Felix Kopanka (Pöge)</p> 
+                <p>Alicia Logan</p> 
+                <p>Joana Fostiak</p>
+                <p>Christopher Hütte</p>
+                <p>Julio Nicolas Cordes</p>
+                <p>Michal Krajczok</p>
+                <p>felice zhukov</p>
+                <p>Tabea Briggs</p>
+                <p>Michal Andrisiak</p>
+                <p>Lisa Fabian</p>
+                <p>Rachel Margetts</p>
+                <p>Greta Buitkute</p>
+                <p>Alix Ihoumeau</p>
+                <p>Samuel Weiskopf</p>
                 <p>Lottie Sebes</p>
-                <p>Michal Krajczok</p> 			
-                <p>Samuel Weikopf</p> 			
-                <p>Peter Landry</p> 				
+                <p>Lisa Violetta Gaß</p>
+                <p>Ana Carlucci</p>
                 <p>Sebastian Völkers</p>
-                <p>Molly Macleod</p>			
-                <p>Fiete Rohde</p> 				
-                <p>Juliana Napier</p> 			
-                <p>Aisling Marnane</p> 
-                <p>Florian Lorenz</p> 
-                <p>Florian Grove</p>				
-                <p>Nils Bloch</p> 
-                <p>Laure Boer</p> 
-                <p>Yannik Doernte</p> 
-                <p>Rachel Margetts</p> 			
-                <p>Maja Kala</p> 
-                <p>Andy Aquarius</p> 
-                <p>Leonardo Rossi</p>
-                <p>Sam Eyvaz</p>
-                <p>Future East Festival</p>
-                <h5>Direction</h5>
-                <p>Alice Morey</p>
-                <p>Philip Schrader</p>
-                <p>Rob Blake</p> 
-                <p>Gustav Kleinschmidt</p>
-                <p>Fabrix Art</p>
-                <p>Bernard Bolter</p>
+                <p>Julius Conrad</p>
+                <p>Besco</p>
             </div>
-        </section> -->
+        </section>
         <!-- <section class="event">
             <h3>Exhibition</h3>
             <p>We welcome you to share with us a weekend full of creativity, installations, performances and sounds interweaving in and out of delicate structures that live in symbiosis with nature. You are invited to stay for the weekend, we share all responsibilities of cleaning and taking care of the site, Please bring your own food and drink, take your rubbish with you when you leave, camping equipment and look after the environment by leaving no trace.</p>

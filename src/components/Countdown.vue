@@ -1,23 +1,26 @@
 <template>
     <section class="time" :style="color">
-        <div class="time_block">
-            <p class="time_digits">{{ days | two_digits }}</p>
-            <p class="time_text">Days</p>
-        </div>
-        <div class="time_between">:</div>
-        <div class="time_block">
-            <p class="time_digits">{{ hours | two_digits }}</p>
-            <p class="time_text">Hours</p>
-        </div>
-        <div class="time_between">:</div>
-        <div class="time_block">
-            <p class="time_digits">{{ minutes | two_digits }}</p>
-            <p class="time_text">Minutes</p>
-        </div>
-        <div class="time_between">:</div>
-        <div class="time_block">
-            <p class="time_digits">{{ seconds | two_digits }}</p>
-            <p class="time_text">Seconds</p>
+        <h1 class="itson" v-if="started">It's On!</h1>
+        <div class="times" v-else>
+            <div class="time_block">
+                <p class="time_digits">{{ days | two_digits }}</p>
+                <p class="time_text">Days</p>
+            </div>
+            <div class="time_between">:</div>
+            <div class="time_block">
+                <p class="time_digits">{{ hours | two_digits }}</p>
+                <p class="time_text">Hours</p>
+            </div>
+            <div class="time_between">:</div>
+            <div class="time_block">
+                <p class="time_digits">{{ minutes | two_digits }}</p>
+                <p class="time_text">Minutes</p>
+            </div>
+            <div class="time_between">:</div>
+            <div class="time_block">
+                <p class="time_digits">{{ seconds | two_digits }}</p>
+                <p class="time_text">Seconds</p>
+            </div>
         </div>
     </section>
 </template>
@@ -33,13 +36,20 @@ export default {
     data() {
         return {
             now: new Date(),
-            date: Math.trunc(new Date(2022, 8, 10, 18) / 1000),
+            date: Math.trunc(new Date(2022, 7, 10, 18) / 1000),
             color: {
                 "color" : this.$store.getters.makeOpaque(false, 9)
             }
         }
     },
     computed: {
+        started() {
+            if (this.date < this.now) {
+                return true
+            } else {
+                return false
+            }
+        },
         seconds() {
             return (this.date - this.now) % 60;
         },
@@ -71,6 +81,11 @@ export default {
 <style scoped lang="scss">
 @import url(https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
+.times {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
 .time {
     display: flex;
     flex-direction: row;
@@ -154,6 +169,23 @@ export default {
     }
     @media (min-width: 1100px) {
         font-size: 99px;
+    }
+}
+
+.itson {
+    font-size: 40px;
+    font-family: $monofont;
+    font-weight: 800;
+    opacity: .8;
+
+    @media (min-width: 500px) {
+        font-size: 75px;
+    }
+    @media (min-width: 900px) {
+        font-size: 120px;
+    }
+    @media (min-width: 1100px) {
+        font-size: 200px;
     }
 }
 </style>

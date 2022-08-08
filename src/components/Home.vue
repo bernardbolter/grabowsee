@@ -204,13 +204,26 @@ export default {
             }
         }
         .inspiration {
+            position: relative;
             width: 90%;
             margin: 225px 5% 0 5%;
 
             @media (min-width: 500px) {
                 width: 70%;
-                margin: 400px 15% 0 15%;
+                margin: 325px 15% 0 15%;
             }
+
+            @media (min-width: 769px) {
+                position: fixed;
+                top: 10px;
+                right: 30px;
+                width: 50%;
+                margin: 0;
+            }
+
+            // @media (min-width: 1100px) {
+            //     width: 40%;
+            // }
 
             .lead {
                 font-size: 35px;
