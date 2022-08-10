@@ -28,7 +28,7 @@
             <div class="column">
                 <h5>Art</h5>
                 <p>Sabiwa</p>
-                <p>Alkmini</p> 				
+                <p>Alkmini Gkousiari</p> 				
                 <p>Alfie Sellers</p>				
                 <p>Julie Teuber</p>
                 <p>Aja Jaques</p>
@@ -41,8 +41,7 @@
                 <p>Anna Vlassova Longworth</p> 
                 <p>Aisling Marnane</p>			
                 <p>Nishmi</p> 			
-                <p>Magdalena Zagorski</p> 			
-                <p>Charlie Hawksfield</p> 
+                <p>Magdalena Zagorski</p>
                 <p>Octavio Garabello</p> 				
                 <p>Ricarda Bochat</p> 		
                 <p>Becky Buchanan</p> 
@@ -59,8 +58,7 @@
                 <p>Allistair Walter</p> 		
                 <p>Clara Ewald</p>
                 <p>Tukalo Olena</p> 	
-                <p>Miguel Soler Montellano</p> 
-                <p>Anastasia Sukhareva-Morozova</p> 				
+                <p>Miguel Soler Montellano</p>				
                 <p>Lise Wilke</p> 			
                 <p>Maitane Midby</p>				
                 <p>Jo Harvey</p> 				
@@ -78,7 +76,7 @@
                 <p>Filipe Pirl</p> 			
                 <p>Maximilian Küster</p>				
                 <p>Gaby Bila-Guenther</p>
-                <p>Zwei</p> 
+                <p>Zwek</p> 
                 <p>Karolina Svärd</p> 				
                 <p>Franziska Doffin</p>			
                 <p>Monique Ulrich</p>
@@ -96,6 +94,8 @@
                 <p>Mario</p>
                 <p>Ben Whitehill</p>
                 <p>Hannah Turner-Duffin</p>
+                <p>Eva Sommer</p>
+                <p>Phillip Seybold</p>
             </div>
             <div class="column">
                 <h5>Sound</h5>
