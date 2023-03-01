@@ -17,7 +17,7 @@
     "mapbox-gl-vue": "^2.0.4",
     "vue": "^2.6.11",
     "vue-mapbox": "^0.4.1",
-    "vue-mapbox-map": "^0.12.4",
+    "vue-mapbox-map": "^0.13.0",
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
