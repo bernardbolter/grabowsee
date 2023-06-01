@@ -48,10 +48,10 @@ export default {
     },
     methods: {
         sortArtwork(theEvent, allArtwork) {
-            console.log("all art: ", allArtwork)
-            allArtwork.map(art => {
-                console.log(art.year)
-            })
+            // console.log("all art: ", allArtwork)
+            // allArtwork.map(art => {
+            //     console.log(art.year)
+            // })
             const yearOfArt = allArtwork.filter(artwork => artwork.year === theEvent.year.toString())
             return this.shuffle(yearOfArt)
 

@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
@@ -10,25 +10,27 @@ const store = new Vuex.Store({
     lastPage: 0,
     activeLink: 0,
     links: [
-        { name: "about", id: 1, active: false },
-        { name: "exhibition", id: 2, active: false },
-        { name: "archive", id: 3, active: false },
-        { name: "contact", id: 4, active: false }
-    ]
+      { name: "about", id: 1, active: false },
+      { name: "open call", id: 2, active: false },
+      { name: "archive", id: 3, active: false },
+      { name: "contact", id: 4, active: false },
+    ],
   },
   getters: {
-    makeOpaque: (state) => (dark, value) => {
-        return dark ? `${state.darkColor.slice(0,-2)}${value})` : `${state.lightColor.slice(0,-2)}${value})`
-    }
+    makeOpaque: state => (dark, value) => {
+      return dark
+        ? `${state.darkColor.slice(0, -2)}${value})`
+        : `${state.lightColor.slice(0, -2)}${value})`;
+    },
   },
   mutations: {
     decideNav(state, id) {
       state.activeLink = id;
       if (id !== 3) {
-          state.lastPage = id;
+        state.lastPage = id;
       }
-    }
-  }
+    },
+  },
 });
 
-export default store
+export default store;

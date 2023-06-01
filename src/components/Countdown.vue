@@ -1,7 +1,8 @@
 <template>
     <section class="time" :style="color">
-        <h1 class="itson" v-if="started">It's On!</h1>
-        <div class="times" v-else>
+        <!-- <h1 class="itson" v-if="started">It's On!</h1>
+        <div class="times" v-else> -->
+        <div class="times">
             <div class="time_block">
                 <p class="time_digits">{{ days | two_digits }}</p>
                 <p class="time_text">Days</p>
@@ -36,7 +37,7 @@ export default {
     data() {
         return {
             now: new Date(),
-            date: Math.trunc(new Date(2022, 7, 10, 18) / 1000),
+            date: Math.trunc(new Date(2023, 7, 10, 18) / 1000),
             color: {
                 "color" : this.$store.getters.makeOpaque(false, 9)
             }

@@ -5,11 +5,11 @@
         <h1 :style="(this.theWidth > 500) ? graOffset : graOffsetSmall">GRA</h1>
         <h1 :style="(this.theWidth > 500) ? bowOffset : bowOffsetSmall">BOW</h1>
         <h1 :style="(this.theWidth > 500) ? seeOffset : seeOffsetSmall">SEE</h1>
-        <h1 :style="(this.theWidth > 500) ? thOffset : thOffsetSmall"><span class="power">10th</span></h1>
+        <h1 :style="(this.theWidth > 500) ? thOffset : thOffsetSmall"><span class="power">11th</span></h1>
         <h1 :style="(this.theWidth > 500) ? editionOffset : editionOffsetSmall"><span class="power">edition</span></h1>
 
         <div class="inspiration">
-            <h2><span  class="lead">Inertia:</span> “a property of matter by which it continues in its existing state of rest or uniform motion in a straight line, unless that state is changed by an external force.”</h2>
+            <h2>Tides are a result of the gravitational pull between the moon and the earth. In its rotation of the earth, the moon pulls the seas back and forth towards it, the water undulating in shifting patterns across the surface of the planet.</h2>
         </div>
     </div>
 </template>
