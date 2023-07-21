@@ -41,10 +41,12 @@ export default {
             backEvent: {
                 "background-color" : this.$store.getters.makeOpaque(false, 9)
             },
+            photos:this.$store.getters.getEventPhotos(this.event.year)
         }
     },
     created() {
         this.artworks = this.sortArtwork(this.event, this.artworksData)
+        this.photos = this.sortEventPhotos(this.event, this.$store.state.eventPhotos)
     },
     methods: {
         sortArtwork(theEvent, allArtwork) {
@@ -54,6 +56,11 @@ export default {
             // })
             const yearOfArt = allArtwork.filter(artwork => artwork.year === theEvent.year.toString())
             return this.shuffle(yearOfArt)
+
+        },
+        sortEventPhotos() {
+          console.log(this.thePhotos)
+          // console.log(allEventPhotos)
 
         },
         shuffle(array) {

@@ -58,7 +58,8 @@ export default {
             archive,
             shuffledArt2019: [],
             shuffledArt2018: [],
-            events: eventsData
+            events: eventsData,
+            eventPhotos: this.$store.getters.getEventPhotos()
         }
     },
     created() {
@@ -69,6 +70,7 @@ export default {
         console.log("events: ", this.events)
         console.log("artworks: ", this.artworks)
         console.log("archive: ", this.archive)
+        console.log("photos: ", this.eventPhotos)
     },
     methods: {
         close() {
@@ -84,8 +86,12 @@ export default {
                 array[randomIndex] = temporaryValue;
             }
             return array
-        }
-    }
+        },
+        
+    },
+    mounted() {
+      this.$store.dispatch('getEventPhotos')
+    },
 }
 </script>
 

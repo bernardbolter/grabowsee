@@ -22,6 +22,23 @@ const store = new Vuex.Store({
         ? `${state.darkColor.slice(0, -2)}${value})`
         : `${state.lightColor.slice(0, -2)}${value})`;
     },
+    getEventPhotos: state => (year) => {
+      console.log('getting e photos', year, state)
+      var eventPhotosArray = []
+      const years = require.context(
+        '@/assets/events/',
+        true,
+        /^.*/
+      )
+      years.keys().map(photo => {
+        const date = photo.slice(2).substring(4,0)
+        if (year === date) {
+          eventPhotosArray.push(photo.slice(7))
+        }
+        
+      })
+      return eventPhotosArray
+    }
   },
   mutations: {
     decideNav(state, id) {
@@ -29,7 +46,7 @@ const store = new Vuex.Store({
       if (id !== 3) {
         state.lastPage = id;
       }
-    },
+    }
   },
 });
 
