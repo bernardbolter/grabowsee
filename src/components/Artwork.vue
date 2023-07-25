@@ -132,7 +132,7 @@ export default {
 <style scoped lang="scss">
     .artwork {
         display: inline-block;
-        z-index: 604;
+        z-index: 601;
         position: relative;
         img {
             width: 100%;
@@ -160,7 +160,7 @@ export default {
         }
     }
     .card {
-        z-index: 605;
+        // z-index: 605;
         position: absolute;
         padding: 5px 10px;
         font-size: 13px;

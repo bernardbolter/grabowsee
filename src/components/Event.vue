@@ -19,6 +19,7 @@
                 <!-- only show if participants are not divided into groups -->
                 <p v-if="event.participants !== undefined">{{event.participants}}</p>
             </div>
+            <Gallery v-bind:photos="this.photos" v-bind:year="event.year" />
         </div>
         <Artworks v-bind:artworks="this.artworks" />
     </section >
@@ -26,13 +27,15 @@
 
 <script>
 import Artworks from './Artworks.vue'
+import Gallery from './Gallery.vue'
 import artworksData from '../data/artworksData.json'
 
 export default {
     name: "Event",
     props: [ 'event' ],
     components: {
-        Artworks
+        Artworks,
+        Gallery
     },
     data() {
         return {
@@ -41,25 +44,20 @@ export default {
             backEvent: {
                 "background-color" : this.$store.getters.makeOpaque(false, 9)
             },
-            photos:this.$store.getters.getEventPhotos(this.event.year)
+            photos: this.$store.getters.getEventPhotos(this.event.year)
         }
     },
     created() {
         this.artworks = this.sortArtwork(this.event, this.artworksData)
-        this.photos = this.sortEventPhotos(this.event, this.$store.state.eventPhotos)
     },
     methods: {
         sortArtwork(theEvent, allArtwork) {
-            // console.log("all art: ", allArtwork)
-            // allArtwork.map(art => {
-            //     console.log(art.year)
-            // })
             const yearOfArt = allArtwork.filter(artwork => artwork.year === theEvent.year.toString())
             return this.shuffle(yearOfArt)
 
         },
         sortEventPhotos() {
-          console.log(this.thePhotos)
+          console.log(this.photos)
           // console.log(allEventPhotos)
 
         },

@@ -14,7 +14,7 @@
             </a>
         </section>
         <div class="back two" :style="backcolor" />
-        <div class="close" :style="closeBack" @click="close" :class="{ closeProjectsOn: this.$store.state.activeLink === 3 }">
+        <div class="close" :style="closeBack" @click="close" :class="{ closeProjectsOn: this.$store.state.activeLink === 3 && this.$store.state.targetPhoto === -1 }">
             <svg viewBox="0 0 65 65">
                 <g id="close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <circle :style="fill" cx="32.5" cy="32.5" r="32.5"></circle>

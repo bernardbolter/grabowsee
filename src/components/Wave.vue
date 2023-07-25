@@ -72,9 +72,9 @@ export default {
         position: fixed;
         left: 0;
         z-index: 105;
-        @media (min-width: 769px) {
-            z-index: 900;
-        }
+        // @media (min-width: 769px) {
+        //     z-index: 900;
+        // }
         path {
             stroke-width: 4px;
             fill: transparent;
