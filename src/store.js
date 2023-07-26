@@ -50,6 +50,7 @@ const store = new Vuex.Store({
       }
     },
     decideTargetPhoto(state, payload) {
+      console.log(payload)
       if (state.targetPhoto === -1) {
         console.log('is minus one')
         state.targetPhoto = payload.index

@@ -2,12 +2,12 @@
   <div>
     <ul class="gallery">
       <div 
-        v-if="targetPhoto !== -1"
+        v-if="this.currentPhoto !== -1"
         class="photo-nav"  
       >
         <div 
           class="gallery-close"
-          @click="choseNextPhoto(-1,-1)"
+          @click="choseNextPhoto(-1, allPhotos)"
         >
         <svg  viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -20,7 +20,7 @@
         <div class="gallery-controls">
           <div 
             class="gallery-last"
-            @click="choseNextPhoto(index, targetPhoto)"
+            @click="choseNextPhoto(currentPhoto - 1, allPhotos)"
           >
             <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.9737 20.6052C14.1842 21.3947 14.1842 22.6579 14.9737 23.3947C15.7632 24.1842 17.0263 24.1842 17.7632 23.3947L23.5 17.6579V38.0263C23.5 39.1315 24.3948 40.0263 25.5 40.0263C26.6053 40.0263 27.5 39.1315 27.5 38.0263V17.7105L33.2369 23.4473C34.0263 24.2368 35.2895 24.2368 36.0263 23.4473C36.3948 23.0789 36.6053 22.5526 36.6053 22.0263C36.6053 21.5 36.3948 21.0263 36.0263 20.6052L26.9211 11.5C26.5526 11.1315 26.0263 10.921 25.5 10.921C24.9737 10.921 24.4474 11.1315 24.079 11.5L14.9737 20.6052Z" fill="rgba(255,255,255,.7)"/>
@@ -29,7 +29,7 @@
           </div>
           <div 
             class="gallery-next"
-            @click="choseNextPhoto(index, targetPhoto)"  
+            @click="choseNextPhoto(currentPhoto + 1, allPhotos)"  
           >
             <svg viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.9737 20.6052C14.1842 21.3947 14.1842 22.6579 14.9737 23.3947C15.7632 24.1842 17.0263 24.1842 17.7632 23.3947L23.5 17.6579V38.0263C23.5 39.1315 24.3948 40.0263 25.5 40.0263C26.6053 40.0263 27.5 39.1315 27.5 38.0263V17.7105L33.2369 23.4473C34.0263 24.2368 35.2895 24.2368 36.0263 23.4473C36.3948 23.0789 36.6053 22.5526 36.6053 22.0263C36.6053 21.5 36.3948 21.0263 36.0263 20.6052L26.9211 11.5C26.5526 11.1315 26.0263 10.921 25.5 10.921C24.9737 10.921 24.4474 11.1315 24.079 11.5L14.9737 20.6052Z" fill="rgba(255,255,255,.7)"/>
@@ -38,15 +38,20 @@
           </div>
         </div>
       </div>
-      <div v-if="targetPhoto !== -1" class="gallery-background"></div>
+      <div v-if="currentPhoto !== -1" class="gallery-background"></div>
       <li 
         v-for="(photo, index) in photos" 
-        :key="photo"
+        :key="index"
         class="photo"
-        :class="index === targetPhoto && 'target'"
-        @click="choseNextPhoto(index, totalPhotos)"
+        :class="index === currentPhoto && 'target'"
+        @click="choseNextPhoto(index, currentPhoto)"
       >
-        <GalleryImage v-bind:year="year" v-bind:photo="photo" v-bind:index="index" />
+        <GalleryImage 
+          v-bind:year="year" 
+          v-bind:photo="photo" 
+          v-bind:index="index" 
+          v-bind:isTarget="index === currentPhoto"
+        />
       </li>
     </ul>
   </div>
@@ -61,22 +66,41 @@ export default {
   components: {
     GalleryImage
   },
+  data() {
+    return {
+      allPhotos: 0,
+      currentPhoto: -1
+    }
+  },
   methods: {
-      choseNextPhoto(index, totalPhotos) {
-        console.log('clicked')
-        const payload = { index, totalPhotos}
-        this.$store.commit('decideTargetPhoto', payload)
+      choseNextPhoto(nextPhoto, allPhotos) {
+        console.log(nextPhoto, this.currentPhoto, allPhotos)
+        console.log(this.currentPhoto <= nextPhoto - 1)
+        if (this.currentPhoto === -1) {
+          this.currentPhoto = nextPhoto
+        } else if (this.currentPhoto < nextPhoto) {
+          if (nextPhoto === allPhotos) {
+            console.log("end")
+          }
+          this.currentPhoto = nextPhoto + 1
+          console.log('plus')
+        } else if (this.currentPhoto > nextPhoto) {
+          this.currentPhoto = nextPhoto - 1
+          console.log('minus')
+        } else {
+          this.currentPhoto = nextPhoto
+        }
+        console.log(this.currentPhoto)
+        
+        // const payload = { index, totalPhotos}
+        // this.$store.commit('decideTargetPhoto', payload)
       }
     },
-  computed: {
-      targetPhoto() {
-        return this.$store.state.targetPhoto
-      },
-      totalPhotos() {
-        return this.photos.length
-      }
-    }
+  mounted() {
+    console.log('all p: ,', this.photos.length)
+    this.allPhotos = this.photos.length
   }
+}
 </script>
 
 <style scoped lang="scss">

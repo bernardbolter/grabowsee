@@ -1,7 +1,7 @@
 <template>
   <img
     class="gallery-image"
-    :class="!this.isTarget ? '' : !this.landscape ? 'portrait' : 'landscape'"
+    :class="!isTarget ? '' : !this.landscape ? 'portrait' : 'landscape'"
     :src="require(`@/assets/events/${year}/${photo}`)"
   >
 </template>
@@ -9,19 +9,14 @@
 <script>
 export default {
   name: 'GalleryImage',
-  props: ['photo', 'year', 'index'],
+  props: ['photo', 'year', 'index', 'isTarget'],
   data() {
     return {
       landscape: null
     }
   },
-  computed: {
-    isTarget() {
-      return this.index === this.$store.state.targetPhoto
-    }
-  },
   mounted() {
-    console.log(this.isTarget)
+    // console.log(this.isTarget)
     var checkedImage = new Image
     checkedImage.src = require(`@/assets/events/${this.year}/${this.photo}`)
     checkedImage.onload = () => {
