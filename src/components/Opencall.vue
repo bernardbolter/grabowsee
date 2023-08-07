@@ -73,24 +73,24 @@
             <p>- We cook vegetarian/vegan food</p>
             <p>- The cost of the residency is 175€ this goes towards infrastructure, food, electricity, technical support & photography</p>
 
-            <h2 class="headspace">Application:</h2>
+            <!-- <h2 class="headspace">Application:</h2>
             <p>Please fill in our participation form:</p>
             <a 
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeC9AAqobByEuycKWCOT92uE3witMny2R0kucuwE56pclYLrw/viewform?usp=pp_url" 
                 target="_blank" 
                 rel="noopener"
                 :style="linkStyles"
-            >Application Link</a>
+            >Application Link</a> -->
 
 
-            <!-- <div class="open-call-closed-container">
+            <div class="open-call-closed-container">
                 <p>Applications are Closed.</p>
-            </div> -->
-
+            </div>
+<!-- 
             <h2>Email us at globe.gallery@gmx.de with any questions.</h2>
             <h2 class="bold">Application deadline: 1st July 2023</h2>
             <p>Selected participants will be informed all by the end of July 2023</p>
-            <h2 class="bold">We look forward to your proposals and welcome you to this year's edition!</h2>
+            <h2 class="bold">We look forward to your proposals and welcome you to this year's edition!</h2> -->
         </section>
     </div>
 </template>
