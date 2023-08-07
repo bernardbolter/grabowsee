@@ -9,7 +9,7 @@ const store = new Vuex.Store({
     lightColor: "rgba(255,255,255,0.9)",
     lastPage: 0,
     activeLink: 0,
-    targetPhoto: -1,
+    galleryOpen: false,
     links: [
       { name: "about", id: 1, active: false },
       { name: "open call", id: 2, active: false },
@@ -49,22 +49,11 @@ const store = new Vuex.Store({
         state.lastPage = id;
       }
     },
-    decideTargetPhoto(state, payload) {
-      console.log(payload)
-      if (state.targetPhoto === -1) {
-        console.log('is minus one')
-        state.targetPhoto = payload.index
-      }
-      if (state.targetPhoto === payload.index) {
-        this.targetPhoto = -1
-      }
-      if (state.targetPhoto > payload.index) {
-        state.targtePhoto = payload.index + 1
-      }
-      if ( state.targetPhoto < payload.index) {
-        this.targetPhoto = payload.index - 1
-      }
-    },
+    decideGalleryOpen(state, bool) {
+      console.log('the bool', bool)
+      this.galleryOpen = bool
+      console.log(this.galleryOpen)
+    }
   },
 });
 

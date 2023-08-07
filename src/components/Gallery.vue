@@ -44,7 +44,7 @@
         :key="index"
         class="photo"
         :class="index === currentPhoto && 'target'"
-        @click="choseNextPhoto(index, currentPhoto)"
+        @click="choseCurrentPhoto(index); handleGalleryOpen(true)"
       >
         <GalleryImage 
           v-bind:year="year" 
@@ -73,34 +73,34 @@ export default {
     }
   },
   methods: {
+      handleGalleryOpen(bool) {
+        console.log('open')
+        this.$store.commit('decideGalleryOpen', bool)
+      },
+      choseCurrentPhoto(photo) {
+        this.currentPhoto = photo
+      },
       choseNextPhoto(nextPhoto, allPhotos) {
         console.log(nextPhoto, this.currentPhoto, allPhotos)
-        console.log(this.currentPhoto <= nextPhoto - 1)
-        if (this.currentPhoto === -1) {
+        if (nextPhoto === -1) {
           this.currentPhoto = nextPhoto
         } else if (this.currentPhoto < nextPhoto) {
           if (nextPhoto === allPhotos) {
-            console.log("end")
+            this.currentPhoto = 0
+          } else {
+            this.currentPhoto = nextPhoto
           }
-          this.currentPhoto = nextPhoto + 1
-          console.log('plus')
         } else if (this.currentPhoto > nextPhoto) {
-          this.currentPhoto = nextPhoto - 1
-          console.log('minus')
-        } else {
           this.currentPhoto = nextPhoto
-        }
-        console.log(this.currentPhoto)
-        
-        // const payload = { index, totalPhotos}
-        // this.$store.commit('decideTargetPhoto', payload)
       }
     },
-  mounted() {
-    console.log('all p: ,', this.photos.length)
-    this.allPhotos = this.photos.length
+    mounted() {
+      console.log('all p: ,', this.photos.length)
+      this.allPhotos = this.photos.length
+    }
   }
 }
+
 </script>
 
 <style scoped lang="scss">
